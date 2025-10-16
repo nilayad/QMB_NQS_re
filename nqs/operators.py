@@ -115,7 +115,7 @@ class TransverseFieldIsing:
         
         Args:
             configs: Configuration indices (integers)
-            log_psi: Log amplitude log|ψ(s)|
+            log_psi: Log amplitude log|ψ(s)| or callable that takes config integers
             
         Returns:
             Local energy for each configuration
@@ -123,17 +123,27 @@ class TransverseFieldIsing:
         batch_size = len(configs)
         e_loc = self.diagonal_energy[configs]
         
+        # Get log_psi for current configs
+        if callable(log_psi):
+            # Convert configs to spins
+            current_spins = np.array([config_to_spins(c, self.num_sites) for c in configs])
+            log_psi_current = log_psi(current_spins)
+        else:
+            log_psi_current = log_psi[configs]
+        
         # Add transverse field contributions
         for i in range(self.num_sites):
             connected = self.connections[i][configs]
-            # For TensorFlow model compatibility, assume log_psi is callable
+            
+            # Get log_psi for connected configs
             if callable(log_psi):
-                log_psi_connected = log_psi(connected)
+                connected_spins = np.array([config_to_spins(c, self.num_sites) for c in connected])
+                log_psi_connected = log_psi(connected_spins)
             else:
                 log_psi_connected = log_psi[connected]
             
             # e_loc += -h * exp(log|ψ(s')|/|ψ(s)|)
-            e_loc += -self.h * np.exp(log_psi_connected - log_psi[configs])
+            e_loc += -self.h * np.exp(log_psi_connected - log_psi_current)
         
         return e_loc
     
@@ -223,12 +233,19 @@ class Heisenberg:
         
         Args:
             configs: Configuration indices
-            log_psi: Log amplitude log|ψ(s)|
+            log_psi: Log amplitude log|ψ(s)| or callable that takes config integers
             
         Returns:
             Local energy for each configuration
         """
         e_loc = self.diagonal_energy[configs]
+        
+        # Get log_psi for current configs
+        if callable(log_psi):
+            current_spins = np.array([config_to_spins(c, self.num_sites) for c in configs])
+            log_psi_current = log_psi(current_spins)
+        else:
+            log_psi_current = log_psi[configs]
         
         num_bonds = self.num_sites if self.pbc else self.num_sites - 1
         
@@ -236,19 +253,21 @@ class Heisenberg:
             # σ^x σ^x term
             connected_sx = self.sx_connections[bond_idx][configs]
             if callable(log_psi):
-                log_psi_sx = log_psi(connected_sx)
+                connected_sx_spins = np.array([config_to_spins(c, self.num_sites) for c in connected_sx])
+                log_psi_sx = log_psi(connected_sx_spins)
             else:
                 log_psi_sx = log_psi[connected_sx]
-            e_loc += self.J * np.exp(log_psi_sx - log_psi[configs])
+            e_loc += self.J * np.exp(log_psi_sx - log_psi_current)
             
             # σ^y σ^y term
             connected_sy = self.sy_connections[bond_idx][configs]
             phases = self.sy_phases[bond_idx][configs]
             if callable(log_psi):
-                log_psi_sy = log_psi(connected_sy)
+                connected_sy_spins = np.array([config_to_spins(c, self.num_sites) for c in connected_sy])
+                log_psi_sy = log_psi(connected_sy_spins)
             else:
                 log_psi_sy = log_psi[connected_sy]
-            e_loc += self.J * phases * np.exp(log_psi_sy - log_psi[configs])
+            e_loc += self.J * phases * np.exp(log_psi_sy - log_psi_current)
         
         return e_loc
 

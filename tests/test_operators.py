@@ -28,8 +28,10 @@ class TestSpinOperators:
         sz = SpinOperators.sigma_z(0, num_sites)
         
         # Check values for all configurations
-        # |00⟩ -> +1, |01⟩ -> +1, |10⟩ -> -1, |11⟩ -> -1
-        expected = np.array([1, 1, -1, -1])
+        # Bit ordering: config 0 = |00⟩, 1 = |10⟩, 2 = |01⟩, 3 = |11⟩
+        # For site 0: bit 0 determines spin
+        # |00⟩ (bit0=0) -> +1, |10⟩ (bit0=1) -> -1, |01⟩ (bit0=0) -> +1, |11⟩ (bit0=1) -> -1
+        expected = np.array([1, -1, 1, -1])
         np.testing.assert_array_equal(sz, expected)
     
     def test_sigma_x(self):
@@ -40,8 +42,9 @@ class TestSpinOperators:
         connected, mel = SpinOperators.sigma_x(0, num_sites)
         
         # σ^x flips the bit at site 0
-        # |00⟩ -> |10⟩, |01⟩ -> |11⟩, |10⟩ -> |00⟩, |11⟩ -> |01⟩
-        expected_connected = np.array([2, 3, 0, 1])
+        # Config: 0=|00⟩, 1=|10⟩, 2=|01⟩, 3=|11⟩
+        # Flipping bit 0: 0->1, 1->0, 2->3, 3->2
+        expected_connected = np.array([1, 0, 3, 2])
         np.testing.assert_array_equal(connected, expected_connected)
         
         # All matrix elements should be 1
@@ -75,14 +78,16 @@ class TestTransverseFieldIsing:
         )
         
         # Check diagonal energies
-        # |00⟩: σ^z_0 = +1, σ^z_1 = +1 -> E = -J*(+1)*(+1) = -1
-        # |11⟩: σ^z_0 = -1, σ^z_1 = -1 -> E = -J*(-1)*(-1) = -1
-        # |01⟩, |10⟩: E = -J*(+1)*(-1) = +1
+        # With PBC we have 2 bonds: (0,1) and (1,0)
+        # Config 0 = |00⟩: both spins +1, E = -J*(+1)*(+1) - J*(+1)*(+1) = -2
+        # Config 1 = |10⟩: s0=-1, s1=+1, E = -J*(-1)*(+1) - J*(+1)*(-1) = +2
+        # Config 2 = |01⟩: s0=+1, s1=-1, E = -J*(+1)*(-1) - J*(-1)*(+1) = +2
+        # Config 3 = |11⟩: both spins -1, E = -J*(-1)*(-1) - J*(-1)*(-1) = -2
         
-        assert hamiltonian.diagonal_energy[0] == -1.0  # |00⟩
-        assert hamiltonian.diagonal_energy[1] == 1.0   # |01⟩
-        assert hamiltonian.diagonal_energy[2] == 1.0   # |10⟩
-        assert hamiltonian.diagonal_energy[3] == -1.0  # |11⟩
+        assert hamiltonian.diagonal_energy[0] == -2.0  # |00⟩
+        assert hamiltonian.diagonal_energy[1] == 2.0   # |10⟩
+        assert hamiltonian.diagonal_energy[2] == 2.0   # |01⟩
+        assert hamiltonian.diagonal_energy[3] == -2.0  # |11⟩
 
 
 class TestHelperFunctions:
