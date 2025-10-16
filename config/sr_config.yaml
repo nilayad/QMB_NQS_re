@@ -1,0 +1,79 @@
+# Stochastic Reconfiguration Configuration
+
+# System parameters
+system:
+  num_sites: 4                # Number of lattice sites
+  hamiltonian: "tfim"         # Hamiltonian type
+  J: 1.0                      # Coupling constant
+  h: 1.0                      # Transverse field
+  Delta: 1.0                  # Anisotropy
+  pbc: true                   # Periodic boundary conditions
+
+# Model architecture
+model:
+  type: "rbm"                 # Model type: "rbm", "mlp", "conv", "rnn"
+  hidden_sizes: [32, 32]      # Hidden layer sizes (for MLP)
+  num_hidden: -1              # Hidden units (for RBM, -1 = 2*num_sites)
+  activation: "tanh"          # Activation function
+  dtype: "float32"            # Data type
+
+# MCMC sampling
+sampling:
+  num_samples: 500            # Samples per SR step
+  num_chains: 4               # Parallel chains
+  warmup_steps: 50            # Thermalization
+  sweep_factor: 1             # Sweeps per sample
+
+# Stochastic Reconfiguration
+sr:
+  learning_rate: 0.01         # SR learning rate (time step)
+  diagonal_shift: 0.01        # Regularization parameter (λ)
+  use_iterative: false        # Use iterative solver (CG)
+  max_iter: 1000              # Max iterations for CG
+  
+  # Adaptive regularization
+  adaptive_shift:
+    enabled: false            # Use adaptive diagonal shift
+    min_shift: 0.001          # Minimum shift
+    max_shift: 0.1            # Maximum shift
+    target_condition: 100.0   # Target condition number
+
+# State preparation (imaginary time evolution)
+state_preparation:
+  num_steps: 200              # Number of imaginary time steps
+  time_step: 0.01             # Imaginary time step size
+  target_fidelity: 0.99       # Stop when fidelity reached
+  fidelity_interval: 10       # Steps between fidelity checks
+
+# Training
+training:
+  num_steps: 300              # SR optimization steps
+  convergence_threshold: 1e-6 # Energy convergence threshold
+  patience: 50                # Steps without improvement before stopping
+  
+  # Preconditioning
+  precondition:
+    enabled: false            # Use additional preconditioning
+    type: "jacobi"            # Preconditioner type
+
+# Logging
+logging:
+  log_interval: 10            # Steps between logging
+  checkpoint_interval: 50     # Steps between checkpoints
+  save_dir: "results/sr"      # Results directory
+  save_history: true          # Save full history
+  show_progress: true         # Show progress bars
+  
+  # Diagnostics
+  compute_diagnostics: true   # Compute SR diagnostics
+  save_s_matrix: false        # Save quantum geometric tensor
+
+# Evaluation
+evaluation:
+  eval_interval: 20           # Steps between evaluations
+  num_eval_samples: 5000      # Samples for evaluation
+  blocking_analysis: true     # Perform blocking analysis
+  autocorrelation: true       # Compute autocorrelation
+
+# Random seed
+seed: 42
