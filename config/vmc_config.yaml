@@ -1,0 +1,56 @@
+# VMC Configuration for Neural Quantum States
+
+# System parameters
+system:
+  num_sites: 4                # Number of lattice sites
+  hamiltonian: "tfim"         # Hamiltonian type: "tfim", "heisenberg"
+  J: 1.0                      # Coupling constant
+  h: 1.0                      # Transverse field (for TFIM)
+  Delta: 1.0                  # Anisotropy (for Heisenberg)
+  pbc: true                   # Periodic boundary conditions
+
+# Model architecture
+model:
+  type: "mlp"                 # Model type: "rbm", "mlp", "conv", "rnn"
+  hidden_sizes: [64, 64]      # Hidden layer sizes (for MLP)
+  num_hidden: -1              # Hidden units (for RBM, -1 = 2*num_sites)
+  activation: "tanh"          # Activation function
+  use_complex: false          # Use complex wavefunction
+  dtype: "float32"            # Data type
+
+# MCMC sampling
+sampling:
+  num_samples: 1000           # Samples per training step
+  num_chains: 4               # Parallel Markov chains
+  warmup_steps: 100           # Thermalization steps
+  sweep_factor: 1             # Sweeps per sample
+
+# Training
+training:
+  num_steps: 500              # Training iterations
+  learning_rate: 0.001        # Learning rate
+  optimizer: "adam"           # Optimizer: "adam", "sgd", "rmsprop"
+  
+  # Learning rate schedule
+  lr_schedule:
+    use_adaptive: false       # Use adaptive learning rate
+    patience: 20              # Patience for reduction
+    factor: 0.5               # Reduction factor
+    min_lr: 1.0e-6            # Minimum learning rate
+
+# Logging and checkpoints
+logging:
+  log_interval: 10            # Steps between logging
+  checkpoint_interval: 100    # Steps between checkpoints
+  save_dir: "results/vmc"     # Directory for results
+  save_history: true          # Save training history
+  show_progress: true         # Show progress bars
+
+# Evaluation
+evaluation:
+  eval_interval: 50           # Steps between evaluations
+  num_eval_samples: 10000     # Samples for evaluation
+  compute_observables: true   # Compute additional observables
+
+# Random seed
+seed: 42
