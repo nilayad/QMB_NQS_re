@@ -1,3 +1,14 @@
+## ⚠️ Work in Progress & Disclaimer
+
+**This project is still under development and is not fully functional.**  
+Please do **not install the package**. The code is provided **for reference only** and should be used with caution.
+
+Parts of this repository, including codes and structure, were **generated or assisted by AI tools (GitHub Copilot)**.  
+The authors take **no responsibility or liability** for errors, bugs, or unintended behavior in the code. Use at your own risk.
+
+
+
+
 # Neural Quantum States with VMC and Stochastic Reconfiguration
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
