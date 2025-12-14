@@ -4,7 +4,7 @@
 [![TensorFlow 2.8+](https://img.shields.io/badge/TensorFlow-2.8+-orange.svg)](https://www.tensorflow.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A production-ready implementation of Neural Quantum States (NQS) for quantum many-body systems using Variational Monte Carlo (VMC) and Stochastic Reconfiguration (SR) optimization.
+A in process to be production-ready implementation of Neural Quantum States (NQS) for quantum many-body systems using Variational Monte Carlo (VMC) and Stochastic Reconfiguration (SR) optimization.
 
 ## Overview
 
@@ -298,7 +298,11 @@ For questions and issues:
 - Open an issue on GitHub
 - Check the examples directory
 - Review the documentation in docstrings
-
+- 
 ## Acknowledgments
 
-This implementation is based on research in quantum machine learning and many-body physics. Special thanks to the quantum computing and neural network communities for their foundational work.
+This repository builds on research in **quantum machine learning** and **many-body physics**. Special thanks to the quantum computing and neural network communities for their foundational work.  
+
+A significant portion of the code and structure was developed with the assistance of **GitHub Copilot (Agent Mode)**, which helped streamline coding, documentation, and project organization.
+
+
