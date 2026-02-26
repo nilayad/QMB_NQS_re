@@ -1,0 +1,4554 @@
+REPOSITORY CONTENTS DUMP
+Generated from: /home/runner/work/QMB_NQS_re/QMB_NQS_re
+Total files: 24
+========================================================================
+
+========================================================================
+FILE: .gitignore
+========================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[codz]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# UV
+#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#uv.lock
+
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
+#poetry.toml
+
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#   pdm recommends including project-wide configuration in pdm.toml, but excluding .pdm-python.
+#   https://pdm-project.org/en/latest/usage/project/#working-with-version-control
+#pdm.lock
+#pdm.toml
+.pdm-python
+.pdm-build/
+
+# pixi
+#   Similar to Pipfile.lock, it is generally recommended to include pixi.lock in version control.
+#pixi.lock
+#   Pixi creates a virtual environment in the .pixi directory, just like venv module creates one
+#   in the .venv directory. It is recommended not to include this directory in version control.
+.pixi
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.envrc
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+#  and can be added to the global gitignore or merged into this file.  For a more nuclear
+#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+#.idea/
+
+# Abstra
+# Abstra is an AI-powered process automation framework.
+# Ignore directories containing user credentials, local state, and settings.
+# Learn more at https://abstra.io/docs
+.abstra/
+
+# Visual Studio Code
+#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
+#  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
+#  and can be added to the global gitignore or merged into this file. However, if you prefer, 
+#  you could uncomment the following to ignore the entire vscode folder
+# .vscode/
+
+# Ruff stuff:
+.ruff_cache/
+
+# PyPI configuration file
+.pypirc
+
+# Cursor
+#  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
+#  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
+#  refer to https://docs.cursor.com/context/ignore-files
+.cursorignore
+.cursorindexingignore
+
+# Marimo
+marimo/_static/
+marimo/_lsp/
+__marimo__/
+
+
+========================================================================
+FILE: LICENSE
+========================================================================
+MIT License
+
+Copyright (c) 2025 Nilaya Vijay Deshpande
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+========================================================================
+FILE: README.md
+========================================================================
+## ⚠️ Work in Progress & Disclaimer
+
+**This project is still under development and is not fully functional.**  
+Please do **not install the package**. The code is provided **for reference only** and should be used with caution.
+
+Parts of this repository, including codes and structure, were **generated or assisted by AI tools (GitHub Copilot)**.  
+The authors take **no responsibility or liability** for errors, bugs, or unintended behavior in the code. Use at your own risk.
+
+
+
+
+# Neural Quantum States with VMC and Stochastic Reconfiguration
+
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![TensorFlow 2.8+](https://img.shields.io/badge/TensorFlow-2.8+-orange.svg)](https://www.tensorflow.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A in process to be production-ready implementation of Neural Quantum States (NQS) for quantum many-body systems using Variational Monte Carlo (VMC) and Stochastic Reconfiguration (SR) optimization.
+
+## Overview
+
+This package provides a complete framework for representing and optimizing quantum wavefunctions using neural networks. It implements state-of-the-art methods from quantum machine learning and computational physics.
+
+### Key Features
+
+- **Multiple NQS Architectures**
+  - Restricted Boltzmann Machines (RBM)
+  - Multi-layer Perceptrons (MLP)
+  - Convolutional Neural Networks
+  - Recurrent Neural Networks (LSTM/GRU)
+
+- **Optimization Methods**
+  - Variational Monte Carlo (VMC) with gradient descent
+  - Stochastic Reconfiguration (natural gradient)
+  - Imaginary time evolution for state preparation
+
+- **Advanced Sampling**
+  - Metropolis-Hastings MCMC
+  - Parallel tempering for improved mixing
+  - Autocorrelation analysis
+
+- **Statistical Analysis**
+  - Blocking method for error estimation
+  - Jackknife and bootstrap resampling
+  - Convergence diagnostics (Geweke, Gelman-Rubin)
+
+- **Hamiltonians**
+  - Transverse-field Ising model
+  - Heisenberg model (XXZ)
+  - Extensible operator framework
+
+## Installation
+
+### Prerequisites
+
+- Python 3.8 or higher
+- TensorFlow 2.8+
+- NumPy, SciPy
+- Matplotlib (for visualization)
+
+### Install from source
+
+```bash
+git clone https://github.com/nilayad/QMB_NQS_re.git
+cd QMB_NQS_re
+pip install -r requirements.txt
+pip install -e .
+```
+
+### Quick install
+
+```bash
+pip install -r requirements.txt
+```
+
+## Quick Start
+
+### Basic VMC Training
+
+```python
+import numpy as np
+from nqs import (
+    create_nqs_model,
+    TransverseFieldIsing,
+    MetropolisSampler,
+    VMCTrainer
+)
+
+# Setup system
+num_sites = 4
+hamiltonian = TransverseFieldIsing(num_sites=num_sites, J=1.0, h=1.0)
+
+# Create NQS model
+model = create_nqs_model('mlp', num_sites=num_sites, hidden_sizes=[64, 64])
+
+# Configure sampler
+sampler = MetropolisSampler(
+    num_sites=num_sites,
+    num_samples=1000,
+    num_chains=4,
+    warmup_steps=100
+)
+
+# Train with VMC
+trainer = VMCTrainer(model, hamiltonian, sampler, learning_rate=0.001)
+history = trainer.train(num_steps=500)
+
+# Evaluate
+results = trainer.evaluate(num_samples=10000)
+print(f"Energy: {results['energy']:.6f} ± {results['energy_error']:.6f}")
+```
+
+### Stochastic Reconfiguration
+
+```python
+from nqs import RBM, StochasticReconfiguration
+
+# Create RBM model
+model = RBM(num_sites=num_sites, num_hidden=2*num_sites)
+
+# SR optimizer
+sr_trainer = StochasticReconfiguration(
+    model=model,
+    hamiltonian=hamiltonian,
+    sampler=sampler,
+    learning_rate=0.01,
+    diagonal_shift=0.01
+)
+
+# Train with natural gradient
+history = sr_trainer.train(num_steps=300)
+```
+
+## Examples
+
+See the `examples/` directory for complete tutorials:
+
+- `01_basic_vmc.py` - Basic VMC training workflow
+- `02_sr_optimization.py` - Stochastic Reconfiguration and comparison with VMC
+
+Run examples:
+
+```bash
+python examples/01_basic_vmc.py
+python examples/02_sr_optimization.py
+```
+
+## Configuration
+
+Training parameters can be specified via YAML configuration files:
+
+```yaml
+# config/vmc_config.yaml
+system:
+  num_sites: 4
+  hamiltonian: "tfim"
+  J: 1.0
+  h: 1.0
+
+model:
+  type: "mlp"
+  hidden_sizes: [64, 64]
+
+training:
+  num_steps: 500
+  learning_rate: 0.001
+```
+
+## Project Structure
+
+```
+QMB_NQS_re/
+├── nqs/                          # Core NQS package
+│   ├── __init__.py              # Package exports
+│   ├── models.py                # Neural network architectures
+│   ├── operators.py             # Quantum operators and Hamiltonians
+│   ├── sampling.py              # MCMC sampling algorithms
+│   ├── training.py              # VMC training
+│   └── stochastic_reconfiguration.py  # SR optimizer
+├── utils/                        # Utilities
+│   ├── diagnostics.py           # Statistical analysis
+│   └── plotting.py              # Visualization
+├── config/                       # Configuration files
+│   ├── vmc_config.yaml
+│   └── sr_config.yaml
+├── examples/                     # Example scripts
+│   ├── 01_basic_vmc.py
+│   └── 02_sr_optimization.py
+├── tests/                        # Unit tests
+│   ├── test_operators.py
+│   └── test_sampling.py
+├── requirements.txt              # Dependencies
+├── setup.py                      # Package setup
+└── README.md                     # This file
+```
+
+## Neural Quantum States
+
+### What are NQS?
+
+Neural Quantum States use neural networks to represent quantum wavefunctions:
+
+ψ(s) = exp(NN(s))
+
+where `s` represents a quantum state configuration and `NN` is a neural network.
+
+### Variational Monte Carlo
+
+VMC optimizes the wavefunction by minimizing the energy expectation:
+
+E[θ] = ⟨ψ(θ)|H|ψ(θ)⟩ / ⟨ψ(θ)|ψ(θ)⟩
+
+The gradient is computed via:
+
+∇E = 2⟨E_loc(s) ∇log|ψ(s)|⟩ - 2⟨E_loc⟩⟨∇log|ψ(s)|⟩
+
+### Stochastic Reconfiguration
+
+SR uses the natural gradient (Quantum Fisher Information):
+
+θ → θ - η S⁻¹F
+
+where:
+- S is the quantum geometric tensor (Fubini-Study metric)
+- F is the energy gradient
+- η is the learning rate
+
+## Testing
+
+Run the test suite:
+
+```bash
+pytest tests/ -v
+```
+
+Run specific tests:
+
+```bash
+pytest tests/test_operators.py -v
+pytest tests/test_sampling.py -v
+```
+
+## Performance Tips
+
+1. **Batch Size**: Use multiple chains for better statistics
+2. **Warmup**: Ensure adequate thermalization (100+ steps)
+3. **Learning Rate**: Start with 0.001 for VMC, 0.01 for SR
+4. **Regularization**: SR diagonal shift typically 0.01-0.1
+5. **Architecture**: RBM for small systems, MLP for larger
+
+## Advanced Features
+
+### Custom Hamiltonians
+
+```python
+class CustomHamiltonian:
+    def __init__(self, num_sites):
+        self.num_sites = num_sites
+    
+    def local_energy(self, configs, log_psi):
+        # Implement E_loc(s) = ⟨s|H|ψ⟩/⟨s|ψ⟩
+        return e_loc
+```
+
+### Custom Observables
+
+```python
+def compute_magnetization(samples):
+    return np.mean(np.sum(samples, axis=1))
+```
+
+## References
+
+1. Carleo, G., & Troyer, M. (2017). Solving the quantum many-body problem with artificial neural networks. *Science*, 355(6325), 602-606.
+
+2. Stokes, J., et al. (2020). Quantum Natural Gradient. *Quantum*, 4, 269.
+
+3. Choo, K., et al. (2020). Fermionic neural-network states for ab-initio electronic structure. *Nature Communications*, 11(1), 1-7.
+
+## Citation
+
+If you use this code in your research, please cite:
+
+```bibtex
+@software{nqs_vmc_sr,
+  title = {Neural Quantum States with VMC and Stochastic Reconfiguration},
+  author = {QMB NQS Research},
+  year = {2024},
+  url = {https://github.com/nilayad/QMB_NQS_re}
+}
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contributing
+
+Contributions are welcome! Please:
+
+1. Fork the repository
+2. Create a feature branch
+3. Add tests for new functionality
+4. Submit a pull request
+
+## Support
+
+For questions and issues:
+- Open an issue on GitHub
+- Check the examples directory
+- Review the documentation in docstrings
+- 
+## Acknowledgments
+
+This repository builds on research in **quantum machine learning** and **many-body physics**. Special thanks to the quantum computing and neural network communities for their foundational work.  
+
+A significant portion of the code and structure was developed with the assistance of **GitHub Copilot (Agent Mode)**, which helped streamline coding, documentation, and project organization.
+
+
+
+
+========================================================================
+FILE: generate_repo_dump.py
+========================================================================
+"""
+generate_repo_dump.py
+---------------------
+Collects the raw content of every text-based file in this repository and
+writes them all into a single file: repo_contents.txt
+
+Usage:
+    python generate_repo_dump.py
+"""
+
+import os
+
+REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_FILE = os.path.join(REPO_ROOT, "repo_contents.txt")
+
+SKIP_EXTENSIONS = {
+    ".png", ".jpg", ".jpeg", ".gif", ".svg", ".ico", ".pdf",
+    ".pyc", ".pyo", ".so", ".o", ".a", ".lib", ".dll", ".exe",
+}
+SKIP_DIRS = {
+    ".git", "__pycache__", ".tox", "node_modules",
+    ".eggs", "dist", "build", ".venv", "venv",
+}
+SKIP_FILES = {"repo_contents.txt"}
+
+
+def collect_files(root):
+    entries = []
+    for dirpath, dirnames, filenames in os.walk(root):
+        dirnames[:] = sorted(d for d in dirnames if d not in SKIP_DIRS)
+        rel_dir = os.path.relpath(dirpath, root)
+        for fname in sorted(filenames):
+            if fname in SKIP_FILES:
+                continue
+            ext = os.path.splitext(fname)[1].lower()
+            if ext in SKIP_EXTENSIONS:
+                continue
+            full_path = os.path.join(dirpath, fname)
+            rel_path = os.path.join(rel_dir, fname) if rel_dir != "." else fname
+            entries.append((rel_path, full_path))
+    return entries
+
+
+def main():
+    files = collect_files(REPO_ROOT)
+    separator = "=" * 72
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as out:
+        out.write("REPOSITORY CONTENTS DUMP\n")
+        out.write(f"Generated from: {REPO_ROOT}\n")
+        out.write(f"Total files: {len(files)}\n")
+        out.write(separator + "\n\n")
+
+        for rel_path, full_path in files:
+            out.write(f"{separator}\n")
+            out.write(f"FILE: {rel_path}\n")
+            out.write(f"{separator}\n")
+            try:
+                with open(full_path, "r", encoding="utf-8", errors="replace") as f:
+                    out.write(f.read())
+            except Exception as exc:
+                out.write(f"[ERROR reading file: {exc}]\n")
+            out.write("\n\n")
+
+    print(f"Done. Output written to: {OUTPUT_FILE}")
+    print(f"Included {len(files)} files.")
+
+
+if __name__ == "__main__":
+    main()
+
+
+========================================================================
+FILE: requirements.txt
+========================================================================
+# Core scientific computing
+numpy>=1.21.0
+scipy>=1.7.0
+
+# Deep learning framework
+tensorflow>=2.8.0
+
+# Configuration management
+pyyaml>=6.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Progress bars
+tqdm>=4.62.0
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=3.0.0
+
+# Type checking (optional but recommended)
+mypy>=0.950
+
+
+========================================================================
+FILE: setup.py
+========================================================================
+"""Setup configuration for Neural Quantum States package."""
+
+from setuptools import setup, find_packages
+
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
+with open("requirements.txt", "r", encoding="utf-8") as fh:
+    requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
+
+setup(
+    name="nqs-vmc",
+    version="0.1.0",
+    author="Neural Quantum States Research",
+    description="Neural Quantum States with Variational Monte Carlo and Stochastic Reconfiguration",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/nilayad/QMB_NQS_re",
+    packages=find_packages(),
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Science/Research",
+        "Topic :: Scientific/Engineering :: Physics",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.8",
+    install_requires=requirements,
+    extras_require={
+        "dev": [
+            "pytest>=7.0.0",
+            "pytest-cov>=3.0.0",
+            "mypy>=0.950",
+        ],
+    },
+)
+
+
+========================================================================
+FILE: config/sr_config.yaml
+========================================================================
+# Stochastic Reconfiguration Configuration
+
+# System parameters
+system:
+  num_sites: 4                # Number of lattice sites
+  hamiltonian: "tfim"         # Hamiltonian type
+  J: 1.0                      # Coupling constant
+  h: 1.0                      # Transverse field
+  Delta: 1.0                  # Anisotropy
+  pbc: true                   # Periodic boundary conditions
+
+# Model architecture
+model:
+  type: "rbm"                 # Model type: "rbm", "mlp", "conv", "rnn"
+  hidden_sizes: [32, 32]      # Hidden layer sizes (for MLP)
+  num_hidden: -1              # Hidden units (for RBM, -1 = 2*num_sites)
+  activation: "tanh"          # Activation function
+  dtype: "float32"            # Data type
+
+# MCMC sampling
+sampling:
+  num_samples: 500            # Samples per SR step
+  num_chains: 4               # Parallel chains
+  warmup_steps: 50            # Thermalization
+  sweep_factor: 1             # Sweeps per sample
+
+# Stochastic Reconfiguration
+sr:
+  learning_rate: 0.01         # SR learning rate (time step)
+  diagonal_shift: 0.01        # Regularization parameter (λ)
+  use_iterative: false        # Use iterative solver (CG)
+  max_iter: 1000              # Max iterations for CG
+  
+  # Adaptive regularization
+  adaptive_shift:
+    enabled: false            # Use adaptive diagonal shift
+    min_shift: 0.001          # Minimum shift
+    max_shift: 0.1            # Maximum shift
+    target_condition: 100.0   # Target condition number
+
+# State preparation (imaginary time evolution)
+state_preparation:
+  num_steps: 200              # Number of imaginary time steps
+  time_step: 0.01             # Imaginary time step size
+  target_fidelity: 0.99       # Stop when fidelity reached
+  fidelity_interval: 10       # Steps between fidelity checks
+
+# Training
+training:
+  num_steps: 300              # SR optimization steps
+  convergence_threshold: 1e-6 # Energy convergence threshold
+  patience: 50                # Steps without improvement before stopping
+  
+  # Preconditioning
+  precondition:
+    enabled: false            # Use additional preconditioning
+    type: "jacobi"            # Preconditioner type
+
+# Logging
+logging:
+  log_interval: 10            # Steps between logging
+  checkpoint_interval: 50     # Steps between checkpoints
+  save_dir: "results/sr"      # Results directory
+  save_history: true          # Save full history
+  show_progress: true         # Show progress bars
+  
+  # Diagnostics
+  compute_diagnostics: true   # Compute SR diagnostics
+  save_s_matrix: false        # Save quantum geometric tensor
+
+# Evaluation
+evaluation:
+  eval_interval: 20           # Steps between evaluations
+  num_eval_samples: 5000      # Samples for evaluation
+  blocking_analysis: true     # Perform blocking analysis
+  autocorrelation: true       # Compute autocorrelation
+
+# Random seed
+seed: 42
+
+
+========================================================================
+FILE: config/vmc_config.yaml
+========================================================================
+# VMC Configuration for Neural Quantum States
+
+# System parameters
+system:
+  num_sites: 4                # Number of lattice sites
+  hamiltonian: "tfim"         # Hamiltonian type: "tfim", "heisenberg"
+  J: 1.0                      # Coupling constant
+  h: 1.0                      # Transverse field (for TFIM)
+  Delta: 1.0                  # Anisotropy (for Heisenberg)
+  pbc: true                   # Periodic boundary conditions
+
+# Model architecture
+model:
+  type: "mlp"                 # Model type: "rbm", "mlp", "conv", "rnn"
+  hidden_sizes: [64, 64]      # Hidden layer sizes (for MLP)
+  num_hidden: -1              # Hidden units (for RBM, -1 = 2*num_sites)
+  activation: "tanh"          # Activation function
+  use_complex: false          # Use complex wavefunction
+  dtype: "float32"            # Data type
+
+# MCMC sampling
+sampling:
+  num_samples: 1000           # Samples per training step
+  num_chains: 4               # Parallel Markov chains
+  warmup_steps: 100           # Thermalization steps
+  sweep_factor: 1             # Sweeps per sample
+
+# Training
+training:
+  num_steps: 500              # Training iterations
+  learning_rate: 0.001        # Learning rate
+  optimizer: "adam"           # Optimizer: "adam", "sgd", "rmsprop"
+  
+  # Learning rate schedule
+  lr_schedule:
+    use_adaptive: false       # Use adaptive learning rate
+    patience: 20              # Patience for reduction
+    factor: 0.5               # Reduction factor
+    min_lr: 1.0e-6            # Minimum learning rate
+
+# Logging and checkpoints
+logging:
+  log_interval: 10            # Steps between logging
+  checkpoint_interval: 100    # Steps between checkpoints
+  save_dir: "results/vmc"     # Directory for results
+  save_history: true          # Save training history
+  show_progress: true         # Show progress bars
+
+# Evaluation
+evaluation:
+  eval_interval: 50           # Steps between evaluations
+  num_eval_samples: 10000     # Samples for evaluation
+  compute_observables: true   # Compute additional observables
+
+# Random seed
+seed: 42
+
+
+========================================================================
+FILE: examples/01_basic_vmc.py
+========================================================================
+"""Basic VMC training example for TFIM ground state."""
+
+import sys
+from pathlib import Path
+import yaml
+import tensorflow as tf
+import numpy as np
+
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from nqs import MLP, TFIMHamiltonian, VMCTrainer, MetropolisSampler
+
+
+def main():
+    """Run basic VMC training."""
+    
+    # Load configuration
+    config_path = Path(__file__).parent.parent / 'config' / 'vmc_config.yaml'
+    
+    try:
+        with open(config_path) as f:
+            config = yaml.safe_load(f)
+        L = config['model']['L']
+        J = config['hamiltonian']['J']
+        h = config['hamiltonian']['h']
+        hidden_sizes = config['model'].get('hidden_sizes', [64, 64])
+        n_epochs = config['training']['n_epochs']
+        n_samples = config['training']['n_samples']
+        n_steps = config['training']['n_mcmc_steps']
+        learning_rate = config['training'].get('learning_rate', 0.001)
+    except Exception as e:
+        print(f"⚠ Could not load config, using defaults: {e}")
+        L = 8
+        J = 1.0
+        h = 0.5
+        hidden_sizes = [64, 128, 64]
+        n_epochs = 500
+        n_samples = 2000
+        n_steps = 100
+        learning_rate = 0.001
+    
+    print("=" * 60)
+    print("Basic VMC Training for TFIM Ground State")
+    print("=" * 60)
+    print(f"System size: L = {L}")
+    print(f"Coupling: J = {J}, Transverse field: h = {h}")
+    print(f"Architecture: MLP {hidden_sizes}")
+    print(f"Training: {n_epochs} epochs, {n_samples} samples, {n_steps} MCMC steps")
+    print(f"Learning rate: {learning_rate}")
+    print("=" * 60)
+    print()
+    
+    # Step 1: Create MLP model
+    print("Creating MLP model...")
+    model = MLP(
+        num_sites=L,
+        hidden_sizes=hidden_sizes,
+        activation='tanh',
+        use_complex=False
+    )
+    
+    # Build model by calling it once
+    dummy_input = tf.ones((1, L))
+    _ = model(dummy_input)
+    
+    print(f"✓ Model created with {model.count_params()} parameters")
+    print()
+    
+    # Step 2: Create Hamiltonian
+    print("Creating TFIM Hamiltonian...")
+    hamiltonian = TFIMHamiltonian(
+        num_sites=L,
+        J=J,
+        h=h,
+        pbc=True
+    )
+    print("✓ Hamiltonian created")
+    print()
+    
+    # Step 3: Create MCMC Sampler
+    print("Creating Metropolis sampler...")
+    sampler = MetropolisSampler(model, num_sites=L)
+    print("✓ Sampler created")
+    print()
+    
+    # Step 4: Create VMC Trainer
+    print("Creating VMC trainer...")
+    trainer = VMCTrainer(
+        model=model,
+        hamiltonian=hamiltonian,
+        sampler=sampler,
+        learning_rate=learning_rate
+    )
+    print("✓ VMC trainer created")
+    print()
+    
+    # Step 5: Run training
+    print("=" * 60)
+    print("Starting VMC Training")
+    print("=" * 60)
+    print()
+    
+    try:
+        history = trainer.train(
+            num_epochs=n_epochs,
+            num_samples=n_samples,
+            mcmc_steps=n_steps,
+            verbose=True
+        )
+        
+        # Print results
+        print()
+        print("=" * 60)
+        print("Training Complete!")
+        print("=" * 60)
+        
+        if 'energy' in history and len(history['energy']) > 0:
+            final_energy = history['energy'][-1]
+            print(f"Final Energy: {final_energy:.6f}")
+            
+            if 'variance' in history and len(history['variance']) > 0:
+                final_variance = history['variance'][-1]
+                print(f"Energy Variance: {final_variance:.6f}")
+            
+            # Simple error estimate from last 100 samples
+            if len(history['energy']) > 100:
+                recent_energies = history['energy'][-100:]
+                error = np.std(recent_energies) / np.sqrt(len(recent_energies))
+                print(f"Energy Error (last 100): ±{error:.6f}")
+        
+        print("=" * 60)
+        
+        # Save model
+        checkpoint_dir = Path('checkpoints')
+        checkpoint_dir.mkdir(exist_ok=True)
+        model_path = checkpoint_dir / 'vmc_ground_state.keras'
+        model.save(str(model_path))
+        print(f"\n✓ Model saved to {model_path}")
+        
+        # Save training history
+        results_dir = Path('results')
+        results_dir.mkdir(exist_ok=True)
+        history_path = results_dir / 'vmc_history.npz'
+        np.savez(str(history_path), **history)
+        print(f"✓ Training history saved to {history_path}")
+        
+        return 0
+        
+    except Exception as e:
+        print()
+        print("=" * 60)
+        print(f"❌ Training Error: {e}")
+        print("=" * 60)
+        import traceback
+        traceback.print_exc()
+        return 1
+
+
+if __name__ == "__main__":
+    exit(main())
+
+
+========================================================================
+FILE: examples/02_sr_optimization.py
+========================================================================
+#!/usr/bin/env python3
+"""Stochastic Reconfiguration optimization example.
+
+This example demonstrates:
+- Using SR for faster convergence
+- State preparation with imaginary time evolution
+- Comparing SR vs VMC
+- Advanced diagnostics
+"""
+
+import numpy as np
+import tensorflow as tf
+import os
+import sys
+
+# Add parent directory to path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from nqs import (
+    RBM,
+    TransverseFieldIsing,
+    MetropolisSampler,
+    StochasticReconfiguration,
+    VMCTrainer
+)
+from utils import (
+    plot_training_history,
+    plot_convergence_comparison
+)
+
+
+def main():
+    """Run SR optimization and compare with VMC."""
+    
+    # Set seeds
+    np.random.seed(42)
+    tf.random.set_seed(42)
+    
+    print("=" * 60)
+    print("Stochastic Reconfiguration Example")
+    print("=" * 60)
+    
+    # System parameters
+    num_sites = 4
+    J = 1.0
+    h = 1.0
+    
+    print(f"\nSystem: TFIM with {num_sites} sites")
+    print(f"  J = {J}, h = {h}")
+    
+    # Create Hamiltonian
+    hamiltonian = TransverseFieldIsing(
+        num_sites=num_sites,
+        J=J,
+        h=h,
+        pbc=True
+    )
+    
+    # Sampler for both methods
+    sampler_sr = MetropolisSampler(
+        num_sites=num_sites,
+        num_samples=500,
+        num_chains=4,
+        warmup_steps=50
+    )
+    
+    sampler_vmc = MetropolisSampler(
+        num_sites=num_sites,
+        num_samples=500,
+        num_chains=4,
+        warmup_steps=50
+    )
+    
+    print("\n" + "-" * 60)
+    print("Training with Stochastic Reconfiguration")
+    print("-" * 60)
+    
+    # Create RBM for SR
+    model_sr = RBM(
+        num_sites=num_sites,
+        num_hidden=2 * num_sites,
+        use_bias=True
+    )
+    
+    # SR optimizer
+    sr_trainer = StochasticReconfiguration(
+        model=model_sr,
+        hamiltonian=hamiltonian,
+        sampler=sampler_sr,
+        learning_rate=0.01,
+        diagonal_shift=0.01
+    )
+    
+    # Train with SR
+    history_sr = sr_trainer.train(
+        num_steps=100,
+        log_interval=10,
+        show_progress=True
+    )
+    
+    print("\n" + "-" * 60)
+    print("Training with VMC for comparison")
+    print("-" * 60)
+    
+    # Create RBM for VMC
+    model_vmc = RBM(
+        num_sites=num_sites,
+        num_hidden=2 * num_sites,
+        use_bias=True
+    )
+    
+    # VMC trainer
+    vmc_trainer = VMCTrainer(
+        model=model_vmc,
+        hamiltonian=hamiltonian,
+        sampler=sampler_vmc,
+        learning_rate=0.01
+    )
+    
+    # Train with VMC
+    history_vmc = vmc_trainer.train(
+        num_steps=100,
+        log_interval=10,
+        show_progress=True
+    )
+    
+    # Compare results
+    print("\n" + "=" * 60)
+    print("Comparison Results")
+    print("=" * 60)
+    
+    sr_final = history_sr['energy'][-1]
+    vmc_final = history_vmc['energy'][-1]
+    
+    print(f"\nFinal Energies:")
+    print(f"  SR:  {sr_final:.6f} (error: {history_sr['energy_error'][-1]:.6f})")
+    print(f"  VMC: {vmc_final:.6f} (error: {history_vmc['energy_error'][-1]:.6f})")
+    
+    # Create results directory
+    os.makedirs("results/sr", exist_ok=True)
+    
+    # Plot comparison
+    print("\nGenerating comparison plots...")
+    
+    histories = {
+        'SR': history_sr,
+        'VMC': history_vmc
+    }
+    
+    plot_convergence_comparison(
+        histories,
+        save_path="results/sr/sr_vs_vmc.png",
+        show=False
+    )
+    print("  Saved: results/sr/sr_vs_vmc.png")
+    
+    # Individual training histories
+    plot_training_history(
+        history_sr,
+        save_path="results/sr/sr_training.png",
+        show=False
+    )
+    print("  Saved: results/sr/sr_training.png")
+    
+    plot_training_history(
+        history_vmc,
+        save_path="results/sr/vmc_training.png",
+        show=False
+    )
+    print("  Saved: results/sr/vmc_training.png")
+    
+    print("\n" + "=" * 60)
+    print("SR optimization completed!")
+    print("=" * 60)
+    
+    # Observations
+    print("\nKey Observations:")
+    print("  - SR typically converges faster than VMC")
+    print("  - SR uses natural gradient (quantum geometric tensor)")
+    print("  - SR requires solving linear system at each step")
+    print("  - VMC is simpler but may need more iterations")
+
+
+if __name__ == "__main__":
+    main()
+
+
+========================================================================
+FILE: nqs/__init__.py
+========================================================================
+"""
+Neural Quantum States Package
+
+A modern implementation of Neural Quantum States (NQS) for quantum many-body physics.
+Includes VMC training, Stochastic Reconfiguration, and multiple architectures.
+"""
+
+__version__ = "0.1.0"
+__author__ = "Nilay Deshpande"
+
+# Import submodules
+from . import operators
+from . import sampling
+from . import models
+from . import training
+
+# Import from operators (using YOUR actual class names)
+from .operators import (
+    SpinOperators,
+    TransverseFieldIsing,
+    Heisenberg,
+    config_to_spins,
+    spins_to_config
+)
+
+# Import from sampling (using YOUR actual class names)
+from .sampling import (
+    MetropolisSampler,
+    ParallelTempering,
+    compute_autocorrelation,
+    estimate_correlation_time
+)
+
+# Import from models (using YOUR actual class names)
+from .models import (
+    NQSBase,
+    RBM,
+    MLP,
+    ConvolutionalNQS,
+    RecurrentNQS,
+    create_nqs_model
+)
+
+# Import from training (using YOUR actual class names)
+from .training import (
+    VMCTrainer,
+    AdaptiveLearningRate,
+    compute_fidelity
+)
+
+# Import from stochastic_reconfiguration (using YOUR actual class names)
+from .stochastic_reconfiguration import (
+    StochasticReconfiguration,
+    StatePreparation
+)
+
+# Create convenient aliases
+SROptimizer = StochasticReconfiguration
+FidelityOptimizer = StatePreparation
+TFIMHamiltonian = TransverseFieldIsing  # Common alias
+build_nqs = create_nqs_model  # Common alias
+SimpleMLP = MLP  # Common alias
+
+# Define public API
+__all__ = [
+    # Submodules
+    'operators',
+    'sampling',
+    'models',
+    'training',
+    
+    # Operators
+    'SpinOperators',
+    'TransverseFieldIsing',
+    'TFIMHamiltonian',  # Alias
+    'Heisenberg',
+    'config_to_spins',
+    'spins_to_config',
+    
+    # Sampling
+    'MetropolisSampler',
+    'ParallelTempering',
+    'compute_autocorrelation',
+    'estimate_correlation_time',
+    
+    # Models
+    'NQSBase',
+    'RBM',
+    'MLP',
+    'SimpleMLP',  # Alias
+    'ConvolutionalNQS',
+    'RecurrentNQS',
+    'create_nqs_model',
+    'build_nqs',  # Alias
+    
+    # Training
+    'VMCTrainer',
+    'AdaptiveLearningRate',
+    'compute_fidelity',
+    
+    # Stochastic Reconfiguration
+    'StochasticReconfiguration',
+    'StatePreparation',
+    'SROptimizer',  # Alias
+    'FidelityOptimizer',  # Alias
+]
+
+
+========================================================================
+FILE: nqs/__init__.py.broken
+========================================================================
+"""Neural Quantum States package.
+
+This package implements Neural Quantum States with Variational Monte Carlo
+and Stochastic Reconfiguration for quantum many-body systems.
+"""
+
+from .models import (
+    NQSBase,
+    RBM,
+    MLP,
+    ConvolutionalNQS,
+    RecurrentNQS,
+    create_nqs_model
+)
+
+from .operators import (
+    SpinOperators,
+    TransverseFieldIsing,
+    Heisenberg,
+    config_to_spins,
+    spins_to_config
+)
+
+from .sampling import (
+    MetropolisSampler,
+    ParallelTempering,
+    compute_autocorrelation,
+    estimate_correlation_time
+)
+
+from .training import (
+    VMCTrainer,
+    AdaptiveLearningRate,
+    compute_fidelity
+)
+
+    StochasticReconfiguration,
+    StatePreparation
+)
+
+__all__ = [
+    # Models
+    'NQSBase',
+    'RBM',
+    'MLP',
+    'ConvolutionalNQS',
+    'RecurrentNQS',
+    'create_nqs_model',
+    
+    # Operators
+    'SpinOperators',
+    'TransverseFieldIsing',
+    'Heisenberg',
+    'config_to_spins',
+    'spins_to_config',
+    
+    # Sampling
+    'MetropolisSampler',
+    'ParallelTempering',
+    'compute_autocorrelation',
+    'estimate_correlation_time',
+    
+    # Training
+    'VMCTrainer',
+    'AdaptiveLearningRate',
+    'compute_fidelity',
+    
+    # Stochastic Reconfiguration
+    'StochasticReconfiguration',
+    'StatePreparation',
+]
+
+__version__ = '0.1.0'
+
+# Make sure SR classes are exported
+
+__all__ = [
+    'operators', 'sampling', 'models', 'training',
+    'SROptimizer', 'FidelityOptimizer'
+]
+
+# Import SR classes with correct names
+
+# Create aliases for convenience
+SROptimizer = StochasticReconfiguration
+FidelityOptimizer = StatePreparation
+
+__all__ = [
+    'operators', 'sampling', 'models', 'training',
+    'StochasticReconfiguration', 'StatePreparation',
+    'SROptimizer', 'FidelityOptimizer'
+]
+
+# Import SR classes with correct names
+
+# Create aliases for convenience
+SROptimizer = StochasticReconfiguration
+FidelityOptimizer = StatePreparation
+
+__all__ = [
+    'operators', 'sampling', 'models', 'training',
+    'StochasticReconfiguration', 'StatePreparation',
+    'SROptimizer', 'FidelityOptimizer'
+]
+
+# Import SR classes with correct names
+from .stochastic_reconfiguration import StochasticReconfiguration, StatePreparation
+
+# Create aliases for convenience
+SROptimizer = StochasticReconfiguration
+FidelityOptimizer = StatePreparation
+
+__all__ = [
+    'operators', 'sampling', 'models', 'training',
+    'StochasticReconfiguration', 'StatePreparation',
+    'SROptimizer', 'FidelityOptimizer'
+]
+
+
+========================================================================
+FILE: nqs/models.py
+========================================================================
+"""Neural Quantum State architectures.
+
+Implements various neural network architectures for representing quantum wavefunctions.
+"""
+
+import tensorflow as tf
+from tensorflow import keras
+from typing import Optional, List, Tuple
+import numpy as np
+
+
+class NQSBase(keras.Model):
+    """Base class for Neural Quantum States.
+    
+    All NQS models should inherit from this and implement forward pass
+    that returns log|ψ(s)|.
+    """
+    
+    def __init__(self, num_sites: int, **kwargs):
+        """Initialize base NQS.
+        
+        Args:
+            num_sites: Number of lattice sites
+        """
+        super().__init__(**kwargs)
+        self.num_sites = num_sites
+    
+    def call(self, spins: tf.Tensor, training: bool = False) -> tf.Tensor:
+        """Compute log|ψ(s)| for spin configurations.
+        
+        Args:
+            spins: Spin configurations shape (batch_size, num_sites) with ±1 values
+            training: Whether in training mode
+            
+        Returns:
+            Log amplitude log|ψ(s)| shape (batch_size,)
+        """
+        raise NotImplementedError("Subclasses must implement call method")
+    
+    def amplitude(self, spins: tf.Tensor) -> tf.Tensor:
+        """Compute amplitude |ψ(s)| (not log).
+        
+        Args:
+            spins: Spin configurations
+            
+        Returns:
+            Amplitude |ψ(s)|
+        """
+        return tf.exp(self.call(spins, training=False))
+    
+    def probability(self, spins: tf.Tensor) -> tf.Tensor:
+        """Compute probability |ψ(s)|².
+        
+        Args:
+            spins: Spin configurations
+            
+        Returns:
+            Probability |ψ(s)|²
+        """
+        log_psi = self.call(spins, training=False)
+        return tf.exp(2.0 * log_psi)
+
+
+class RBM(NQSBase):
+    """Restricted Boltzmann Machine for quantum states.
+    
+    ψ(s) = exp(Σᵢ aᵢsᵢ + Σⱼ log cosh(bⱼ + Σᵢ Wⱼᵢsᵢ))
+    """
+    
+    def __init__(self, 
+                 num_sites: int,
+                 num_hidden: int = 2,
+                 use_bias: bool = True,
+                 dtype: tf.DType = tf.float32,
+                 **kwargs):
+        """Initialize RBM.
+        
+        Args:
+            num_sites: Number of visible units (spins)
+            num_hidden: Number of hidden units (default: 2x visible)
+            use_bias: Include visible biases
+            dtype: Data type for parameters
+        """
+        super().__init__(num_sites, **kwargs)
+        
+        if num_hidden <= 0:
+            num_hidden = 2 * num_sites
+        
+        self.num_hidden = num_hidden
+        self.use_bias = use_bias
+        self._dtype = dtype
+        
+        # Initialize parameters
+        self._build_parameters()
+    
+    def _build_parameters(self):
+        """Initialize RBM parameters."""
+        # Visible biases
+        if self.use_bias:
+            self.a = self.add_weight(
+                name='visible_bias',
+                shape=(self.num_sites,),
+                initializer=keras.initializers.RandomNormal(stddev=0.01),
+                dtype=self._dtype,
+                trainable=True
+            )
+        
+        # Hidden biases
+        self.b = self.add_weight(
+            name='hidden_bias',
+            shape=(self.num_hidden,),
+            initializer=keras.initializers.RandomNormal(stddev=0.01),
+            dtype=self._dtype,
+            trainable=True
+        )
+        
+        # Weights
+        self.W = self.add_weight(
+            name='weights',
+            shape=(self.num_sites, self.num_hidden),
+            initializer=keras.initializers.GlorotNormal(),
+            dtype=self._dtype,
+            trainable=True
+        )
+    
+    @tf.function
+    def call(self, spins: tf.Tensor, training: bool = False) -> tf.Tensor:
+        """Compute log|ψ(s)|.
+        
+        Args:
+            spins: Shape (batch_size, num_sites) with ±1 values
+            training: Training mode flag
+            
+        Returns:
+            log|ψ(s)| shape (batch_size,)
+        """
+        # Ensure correct dtype
+        spins = tf.cast(spins, self._dtype)
+        
+        # Visible contribution: Σᵢ aᵢsᵢ
+        if self.use_bias:
+            visible_contrib = tf.reduce_sum(spins * self.a, axis=1)
+        else:
+            visible_contrib = 0.0
+        
+        # Hidden contribution: Σⱼ log cosh(bⱼ + Σᵢ Wⱼᵢsᵢ)
+        hidden_input = self.b + tf.matmul(spins, self.W)
+        
+        # Use log_cosh for numerical stability
+        hidden_contrib = tf.reduce_sum(self._log_cosh(hidden_input), axis=1)
+        
+        return visible_contrib + hidden_contrib
+    
+    @staticmethod
+    @tf.function
+    def _log_cosh(x: tf.Tensor) -> tf.Tensor:
+        """Numerically stable log(cosh(x)).
+        
+        log(cosh(x)) = log((e^x + e^-x)/2) = |x| + log(1 + e^(-2|x|)) - log(2)
+        """
+        abs_x = tf.abs(x)
+        return abs_x + tf.math.log1p(tf.exp(-2.0 * abs_x)) - tf.math.log(2.0)
+
+
+class MLP(NQSBase):
+    """Multi-layer perceptron for quantum states.
+    
+    ψ(s) = exp(MLP(s))
+    """
+    
+    def __init__(self,
+                 num_sites: int,
+                 hidden_sizes: List[int] = [64, 64],
+                 activation: str = 'tanh',
+                 use_complex: bool = False,
+                 dtype: tf.DType = tf.float32,
+                 **kwargs):
+        """Initialize MLP.
+        
+        Args:
+            num_sites: Number of input sites
+            hidden_sizes: List of hidden layer sizes
+            activation: Activation function
+            use_complex: Use complex-valued output (phase + amplitude)
+            dtype: Data type
+        """
+        super().__init__(num_sites, **kwargs)
+        
+        self.hidden_sizes = hidden_sizes
+        self.activation = activation
+        self.use_complex = use_complex
+        self._dtype = dtype
+        
+        # Build layers
+        self._build_layers()
+    
+    def _build_layers(self):
+        """Construct MLP layers."""
+        self.hidden_layers = []
+        
+        for i, size in enumerate(self.hidden_sizes):
+            self.hidden_layers.append(
+                keras.layers.Dense(
+                    size,
+                    activation=self.activation,
+                    dtype=self._dtype,
+                    name=f'hidden_{i}'
+                )
+            )
+        
+        # Output layer (log amplitude)
+        self.output_layer = keras.layers.Dense(
+            1, activation=None, dtype=self._dtype, name='log_amplitude'
+        )
+        
+        if self.use_complex:
+            # Additional output for phase
+            self.phase_layer = keras.layers.Dense(
+                1, activation=None, dtype=self._dtype, name='phase'
+            )
+    
+    @tf.function
+    def call(self, spins: tf.Tensor, training: bool = False) -> tf.Tensor:
+        """Compute log|ψ(s)|.
+        
+        Args:
+            spins: Shape (batch_size, num_sites)
+            training: Training mode
+            
+        Returns:
+            log|ψ(s)| shape (batch_size,)
+        """
+        x = tf.cast(spins, self._dtype)
+        
+        # Forward pass through hidden layers
+        for layer in self.hidden_layers:
+            x = layer(x, training=training)
+        
+        # Output
+        log_psi = tf.squeeze(self.output_layer(x, training=training), axis=1)
+        
+        return log_psi
+    
+    def get_phase(self, spins: tf.Tensor) -> tf.Tensor:
+        """Get phase of wavefunction (if complex).
+        
+        Args:
+            spins: Spin configurations
+            
+        Returns:
+            Phase angle
+        """
+        if not self.use_complex:
+            return tf.zeros(tf.shape(spins)[0], dtype=self._dtype)
+        
+        x = tf.cast(spins, self._dtype)
+        for layer in self.hidden_layers:
+            x = layer(x, training=False)
+        
+        phase = tf.squeeze(self.phase_layer(x), axis=1)
+        return phase
+
+
+class ConvolutionalNQS(NQSBase):
+    """Convolutional Neural Quantum State.
+    
+    Uses 1D convolutions to capture local correlations.
+    """
+    
+    def __init__(self,
+                 num_sites: int,
+                 num_filters: List[int] = [16, 32],
+                 kernel_sizes: List[int] = [3, 3],
+                 activation: str = 'relu',
+                 use_pooling: bool = False,
+                 dtype: tf.DType = tf.float32,
+                 **kwargs):
+        """Initialize ConvNQS.
+        
+        Args:
+            num_sites: Number of sites
+            num_filters: Number of filters per conv layer
+            kernel_sizes: Kernel sizes per conv layer
+            activation: Activation function
+            use_pooling: Use max pooling between conv layers
+            dtype: Data type
+        """
+        super().__init__(num_sites, **kwargs)
+        
+        self.num_filters = num_filters
+        self.kernel_sizes = kernel_sizes
+        self.activation = activation
+        self.use_pooling = use_pooling
+        self._dtype = dtype
+        
+        self._build_layers()
+    
+    def _build_layers(self):
+        """Build convolutional layers."""
+        self.conv_layers = []
+        self.pool_layers = []
+        
+        for i, (filters, kernel_size) in enumerate(zip(self.num_filters, self.kernel_sizes)):
+            self.conv_layers.append(
+                keras.layers.Conv1D(
+                    filters,
+                    kernel_size,
+                    padding='same',
+                    activation=self.activation,
+                    dtype=self._dtype,
+                    name=f'conv_{i}'
+                )
+            )
+            
+            if self.use_pooling:
+                self.pool_layers.append(
+                    keras.layers.MaxPooling1D(pool_size=2, padding='same')
+                )
+        
+        self.flatten = keras.layers.Flatten()
+        self.dense = keras.layers.Dense(32, activation=self.activation, dtype=self._dtype)
+        self.output_layer = keras.layers.Dense(1, activation=None, dtype=self._dtype)
+    
+    @tf.function
+    def call(self, spins: tf.Tensor, training: bool = False) -> tf.Tensor:
+        """Compute log|ψ(s)|.
+        
+        Args:
+            spins: Shape (batch_size, num_sites)
+            training: Training mode
+            
+        Returns:
+            log|ψ(s)|
+        """
+        # Reshape to (batch, sites, 1) for Conv1D
+        x = tf.cast(spins, self._dtype)
+        x = tf.expand_dims(x, axis=-1)
+        
+        # Convolutional layers
+        for i, conv in enumerate(self.conv_layers):
+            x = conv(x, training=training)
+            if self.use_pooling and i < len(self.pool_layers):
+                x = self.pool_layers[i](x)
+        
+        # Flatten and dense
+        x = self.flatten(x)
+        x = self.dense(x, training=training)
+        log_psi = tf.squeeze(self.output_layer(x, training=training), axis=1)
+        
+        return log_psi
+
+
+class RecurrentNQS(NQSBase):
+    """Recurrent Neural Quantum State.
+    
+    Uses autoregressive LSTM/GRU to model ψ(s) = Πᵢ p(sᵢ|s₁...sᵢ₋₁).
+    """
+    
+    def __init__(self,
+                 num_sites: int,
+                 hidden_size: int = 64,
+                 num_layers: int = 1,
+                 cell_type: str = 'lstm',
+                 dtype: tf.DType = tf.float32,
+                 **kwargs):
+        """Initialize RecurrentNQS.
+        
+        Args:
+            num_sites: Number of sites
+            hidden_size: RNN hidden state size
+            num_layers: Number of RNN layers
+            cell_type: 'lstm' or 'gru'
+            dtype: Data type
+        """
+        super().__init__(num_sites, **kwargs)
+        
+        self.hidden_size = hidden_size
+        self.num_layers = num_layers
+        self.cell_type = cell_type.lower()
+        self._dtype = dtype
+        
+        self._build_layers()
+    
+    def _build_layers(self):
+        """Build recurrent layers."""
+        # Input embedding
+        self.embedding = keras.layers.Dense(
+            self.hidden_size, dtype=self._dtype, name='embedding'
+        )
+        
+        # RNN layers
+        self.rnn_layers = []
+        for i in range(self.num_layers):
+            if self.cell_type == 'lstm':
+                rnn = keras.layers.LSTM(
+                    self.hidden_size,
+                    return_sequences=True,
+                    return_state=False,
+                    dtype=self._dtype,
+                    name=f'lstm_{i}'
+                )
+            elif self.cell_type == 'gru':
+                rnn = keras.layers.GRU(
+                    self.hidden_size,
+                    return_sequences=True,
+                    return_state=False,
+                    dtype=self._dtype,
+                    name=f'gru_{i}'
+                )
+            else:
+                raise ValueError(f"Unknown cell_type: {self.cell_type}")
+            
+            self.rnn_layers.append(rnn)
+        
+        # Output layer
+        self.output_layer = keras.layers.Dense(1, dtype=self._dtype, name='output')
+    
+    @tf.function
+    def call(self, spins: tf.Tensor, training: bool = False) -> tf.Tensor:
+        """Compute log|ψ(s)| using autoregressive factorization.
+        
+        log|ψ(s)| = Σᵢ log p(sᵢ|s₁...sᵢ₋₁)
+        
+        Args:
+            spins: Shape (batch_size, num_sites)
+            training: Training mode
+            
+        Returns:
+            log|ψ(s)|
+        """
+        # Reshape to (batch, num_sites, 1)
+        x = tf.cast(spins, self._dtype)
+        x = tf.expand_dims(x, axis=-1)
+        
+        # Embed
+        x = self.embedding(x, training=training)
+        
+        # RNN layers
+        for rnn in self.rnn_layers:
+            x = rnn(x, training=training)
+        
+        # Get conditional log probabilities
+        log_probs = tf.squeeze(self.output_layer(x, training=training), axis=-1)
+        
+        # Sum over sites
+        log_psi = tf.reduce_sum(log_probs, axis=1)
+        
+        return log_psi
+
+
+def create_nqs_model(model_type: str, 
+                     num_sites: int,
+                     **kwargs) -> NQSBase:
+    """Factory function to create NQS models.
+    
+    Args:
+        model_type: One of 'rbm', 'mlp', 'conv', 'rnn'
+        num_sites: Number of lattice sites
+        **kwargs: Model-specific arguments
+        
+    Returns:
+        NQS model instance
+    """
+    model_type = model_type.lower()
+    
+    if model_type == 'rbm':
+        return RBM(num_sites, **kwargs)
+    elif model_type == 'mlp':
+        return MLP(num_sites, **kwargs)
+    elif model_type == 'conv' or model_type == 'convolutional':
+        return ConvolutionalNQS(num_sites, **kwargs)
+    elif model_type == 'rnn' or model_type == 'recurrent':
+        return RecurrentNQS(num_sites, **kwargs)
+    else:
+        raise ValueError(f"Unknown model type: {model_type}")
+
+
+========================================================================
+FILE: nqs/operators.py
+========================================================================
+"""Quantum operators for spin systems.
+
+This module implements quantum operators for spin-1/2 systems including
+Pauli matrices and Hamiltonian construction for various models.
+"""
+
+import numpy as np
+from typing import List, Tuple, Optional
+import tensorflow as tf
+
+
+class SpinOperators:
+    """Collection of spin-1/2 operators."""
+    
+    @staticmethod
+    def sigma_z(site: int, num_sites: int) -> np.ndarray:
+        """Compute σ^z operator at a specific site.
+        
+        Args:
+            site: Site index (0-indexed)
+            num_sites: Total number of sites
+            
+        Returns:
+            Diagonal σ^z operator as 1D array (diagonal elements only)
+        """
+        configs = np.arange(2**num_sites)
+        return 1.0 - 2.0 * ((configs >> site) & 1)
+    
+    @staticmethod
+    def sigma_x(site: int, num_sites: int) -> Tuple[np.ndarray, np.ndarray]:
+        """Compute σ^x operator at a specific site.
+        
+        Args:
+            site: Site index (0-indexed)
+            num_sites: Total number of sites
+            
+        Returns:
+            Tuple of (connected_configs, matrix_elements)
+            connected_configs: States connected by σ^x
+            matrix_elements: All ones (σ^x flips spin)
+        """
+        configs = np.arange(2**num_sites)
+        connected_configs = configs ^ (1 << site)  # Flip bit at site
+        matrix_elements = np.ones_like(configs, dtype=np.float64)
+        return connected_configs, matrix_elements
+    
+    @staticmethod
+    def sigma_y(site: int, num_sites: int) -> Tuple[np.ndarray, np.ndarray]:
+        """Compute σ^y operator at a specific site.
+        
+        Args:
+            site: Site index (0-indexed)
+            num_sites: Total number of sites
+            
+        Returns:
+            Tuple of (connected_configs, matrix_elements)
+        """
+        configs = np.arange(2**num_sites)
+        connected_configs = configs ^ (1 << site)
+        # σ^y = i(|↓⟩⟨↑| - |↑⟩⟨↓|), imaginary part handled separately
+        spins = (configs >> site) & 1
+        matrix_elements = 1.0 - 2.0 * spins  # +1 for up->down, -1 for down->up
+        return connected_configs, matrix_elements
+
+
+class TransverseFieldIsing:
+    """Transverse-field Ising model Hamiltonian.
+    
+    H = -J Σᵢ σᵢᶻ σᵢ₊₁ᶻ - h Σᵢ σᵢˣ
+    """
+    
+    def __init__(self, num_sites: int, J: float = 1.0, h: float = 1.0, 
+                 pbc: bool = True):
+        """Initialize Hamiltonian.
+        
+        Args:
+            num_sites: Number of spin sites
+            J: Ising coupling strength
+            h: Transverse field strength
+            pbc: Use periodic boundary conditions
+        """
+        self.num_sites = num_sites
+        self.J = J
+        self.h = h
+        self.pbc = pbc
+        self._precompute_local_energies()
+    
+    def _precompute_local_energies(self):
+        """Precompute diagonal (σ^z σ^z) terms."""
+        configs = np.arange(2**self.num_sites)
+        
+        # Compute Ising term: -J Σᵢ σᵢᶻ σᵢ₊₁ᶻ
+        energy = np.zeros(2**self.num_sites)
+        num_bonds = self.num_sites if self.pbc else self.num_sites - 1
+        
+        for i in range(num_bonds):
+            j = (i + 1) % self.num_sites
+            sz_i = SpinOperators.sigma_z(i, self.num_sites)
+            sz_j = SpinOperators.sigma_z(j, self.num_sites)
+            energy -= self.J * sz_i * sz_j
+        
+        self.diagonal_energy = energy
+        
+        # Precompute off-diagonal connections (σ^x terms)
+        self.connections = []
+        for i in range(self.num_sites):
+            connected, _ = SpinOperators.sigma_x(i, self.num_sites)
+            self.connections.append(connected)
+    
+    def local_energy(self, configs: np.ndarray, 
+                     log_psi: np.ndarray) -> np.ndarray:
+        """Compute local energy for given configurations.
+        
+        E_loc(s) = Σₛ' H(s,s') ψ(s')/ψ(s)
+        
+        Args:
+            configs: Configuration indices (integers)
+            log_psi: Log amplitude log|ψ(s)|
+            
+        Returns:
+            Local energy for each configuration
+        """
+        batch_size = len(configs)
+        e_loc = self.diagonal_energy[configs]
+        
+        # Add transverse field contributions
+        for i in range(self.num_sites):
+            connected = self.connections[i][configs]
+            # For TensorFlow model compatibility, assume log_psi is callable
+            if callable(log_psi):
+                log_psi_connected = log_psi(connected)
+            else:
+                log_psi_connected = log_psi[connected]
+            
+            # e_loc += -h * exp(log|ψ(s')|/|ψ(s)|)
+            e_loc += -self.h * np.exp(log_psi_connected - log_psi[configs])
+        
+        return e_loc
+    
+    def find_connections(self, config: int) -> Tuple[np.ndarray, np.ndarray]:
+        """Find all states connected to config and their matrix elements.
+        
+        Args:
+            config: Configuration index
+            
+        Returns:
+            Tuple of (connected_states, matrix_elements)
+        """
+        connected = [config]
+        mel = [self.diagonal_energy[config]]
+        
+        # Add σ^x connections
+        for i in range(self.num_sites):
+            connected.append(self.connections[i][config])
+            mel.append(-self.h)
+        
+        return np.array(connected), np.array(mel)
+
+
+class Heisenberg:
+    """Heisenberg model Hamiltonian.
+    
+    H = J Σᵢ (σᵢˣσᵢ₊₁ˣ + σᵢʸσᵢ₊₁ʸ + Δσᵢᶻσᵢ₊₁ᶻ)
+    """
+    
+    def __init__(self, num_sites: int, J: float = 1.0, Delta: float = 1.0,
+                 pbc: bool = True):
+        """Initialize Heisenberg Hamiltonian.
+        
+        Args:
+            num_sites: Number of spin sites
+            J: Exchange coupling
+            Delta: Anisotropy parameter
+            pbc: Use periodic boundary conditions
+        """
+        self.num_sites = num_sites
+        self.J = J
+        self.Delta = Delta
+        self.pbc = pbc
+        self._precompute_connections()
+    
+    def _precompute_connections(self):
+        """Precompute all connections."""
+        num_bonds = self.num_sites if self.pbc else self.num_sites - 1
+        
+        # Precompute diagonal (σ^z σ^z) terms
+        configs = np.arange(2**self.num_sites)
+        energy = np.zeros(2**self.num_sites)
+        
+        for i in range(num_bonds):
+            j = (i + 1) % self.num_sites
+            sz_i = SpinOperators.sigma_z(i, self.num_sites)
+            sz_j = SpinOperators.sigma_z(j, self.num_sites)
+            energy += self.J * self.Delta * sz_i * sz_j
+        
+        self.diagonal_energy = energy
+        
+        # Precompute off-diagonal connections
+        self.sx_connections = []
+        self.sy_connections = []
+        self.sy_phases = []
+        
+        for i in range(num_bonds):
+            j = (i + 1) % self.num_sites
+            
+            # σ^x_i σ^x_j connections (flip both spins)
+            configs_flip_both = configs ^ (1 << i) ^ (1 << j)
+            self.sx_connections.append(configs_flip_both)
+            
+            # σ^y_i σ^y_j connections (also flip both, but with phase)
+            self.sy_connections.append(configs_flip_both)
+            
+            # Compute phases for σ^y σ^y
+            spin_i = (configs >> i) & 1
+            spin_j = (configs >> j) & 1
+            # Phase is (-1)^(s_i + s_j)
+            phases = 1.0 - 2.0 * ((spin_i + spin_j) & 1)
+            self.sy_phases.append(phases)
+    
+    def local_energy(self, configs: np.ndarray,
+                     log_psi: np.ndarray) -> np.ndarray:
+        """Compute local energy for given configurations.
+        
+        Args:
+            configs: Configuration indices
+            log_psi: Log amplitude log|ψ(s)|
+            
+        Returns:
+            Local energy for each configuration
+        """
+        e_loc = self.diagonal_energy[configs]
+        
+        num_bonds = self.num_sites if self.pbc else self.num_sites - 1
+        
+        for bond_idx in range(num_bonds):
+            # σ^x σ^x term
+            connected_sx = self.sx_connections[bond_idx][configs]
+            if callable(log_psi):
+                log_psi_sx = log_psi(connected_sx)
+            else:
+                log_psi_sx = log_psi[connected_sx]
+            e_loc += self.J * np.exp(log_psi_sx - log_psi[configs])
+            
+            # σ^y σ^y term
+            connected_sy = self.sy_connections[bond_idx][configs]
+            phases = self.sy_phases[bond_idx][configs]
+            if callable(log_psi):
+                log_psi_sy = log_psi(connected_sy)
+            else:
+                log_psi_sy = log_psi[connected_sy]
+            e_loc += self.J * phases * np.exp(log_psi_sy - log_psi[configs])
+        
+        return e_loc
+
+
+def config_to_spins(config: int, num_sites: int) -> np.ndarray:
+    """Convert configuration integer to spin array.
+    
+    Args:
+        config: Configuration as integer
+        num_sites: Number of sites
+        
+    Returns:
+        Spin configuration as array of ±1
+    """
+    spins = np.array([(config >> i) & 1 for i in range(num_sites)])
+    return 1 - 2 * spins  # Convert 0,1 to +1,-1
+
+
+def spins_to_config(spins: np.ndarray) -> int:
+    """Convert spin array to configuration integer.
+    
+    Args:
+        spins: Spin configuration (±1)
+        
+    Returns:
+        Configuration as integer
+    """
+    bits = (1 - spins) // 2  # Convert +1,-1 to 0,1
+    config = 0
+    for i, bit in enumerate(bits):
+        config |= (int(bit) << i)
+    return config
+
+
+========================================================================
+FILE: nqs/sampling.py
+========================================================================
+"""MCMC sampling for Neural Quantum States.
+
+Implements Metropolis-Hastings algorithm for sampling from |ψ(s)|².
+"""
+
+import numpy as np
+import tensorflow as tf
+from typing import Callable, Tuple, Optional, Dict
+from tqdm import tqdm
+
+
+class MetropolisSampler:
+    """Metropolis-Hastings sampler for NQS.
+    
+    Samples configurations from the probability distribution P(s) = |ψ(s)|²/Z.
+    """
+    
+    def __init__(self, 
+                 num_sites: int,
+                 num_samples: int = 1000,
+                 num_chains: int = 1,
+                 warmup_steps: int = 100,
+                 sweep_factor: int = 1):
+        """Initialize Metropolis sampler.
+        
+        Args:
+            num_sites: Number of lattice sites
+            num_samples: Number of samples to generate per chain
+            num_chains: Number of parallel Markov chains
+            warmup_steps: Thermalization steps before sampling
+            sweep_factor: Number of single-spin flips per sweep (multiplier of num_sites)
+        """
+        self.num_sites = num_sites
+        self.num_samples = num_samples
+        self.num_chains = num_chains
+        self.warmup_steps = warmup_steps
+        self.sweep_factor = sweep_factor
+        self.steps_per_sweep = num_sites * sweep_factor
+        
+        # Statistics
+        self.acceptance_rate = 0.0
+    
+    def _initialize_chains(self) -> np.ndarray:
+        """Initialize random spin configurations.
+        
+        Returns:
+            Initial configurations shape (num_chains, num_sites) with ±1 spins
+        """
+        return 2 * np.random.randint(0, 2, size=(self.num_chains, self.num_sites)) - 1
+    
+    def _propose_flip(self, configs: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
+        """Propose single-spin flips.
+        
+        Args:
+            configs: Current configurations (num_chains, num_sites)
+            
+        Returns:
+            Tuple of (proposed_configs, flipped_sites)
+        """
+        proposed = configs.copy()
+        sites = np.random.randint(0, self.num_sites, size=self.num_chains)
+        
+        for chain_idx, site in enumerate(sites):
+            proposed[chain_idx, site] *= -1
+        
+        return proposed, sites
+    
+    def _acceptance_probability(self,
+                                current_log_psi: tf.Tensor,
+                                proposed_log_psi: tf.Tensor) -> np.ndarray:
+        """Compute acceptance probability.
+        
+        P_accept = min(1, |ψ(s')|² / |ψ(s)|²) = min(1, exp(2[log|ψ(s')| - log|ψ(s)|]))
+        
+        Args:
+            current_log_psi: log|ψ(s)| for current configs
+            proposed_log_psi: log|ψ(s')| for proposed configs
+            
+        Returns:
+            Acceptance probabilities for each chain
+        """
+        log_prob_ratio = 2.0 * (proposed_log_psi - current_log_psi)
+        return np.minimum(1.0, np.exp(log_prob_ratio.numpy()))
+    
+    def sample(self,
+               model: Callable[[np.ndarray], tf.Tensor],
+               initial_configs: Optional[np.ndarray] = None,
+               show_progress: bool = True) -> Tuple[np.ndarray, Dict[str, float]]:
+        """Generate samples using Metropolis-Hastings.
+        
+        Args:
+            model: Function that computes log|ψ(s)| from spin configurations
+            initial_configs: Initial configurations (num_chains, num_sites)
+            show_progress: Show progress bar
+            
+        Returns:
+            Tuple of (samples, statistics)
+            samples: Array of shape (num_samples * num_chains, num_sites)
+            statistics: Dictionary with sampling statistics
+        """
+        # Initialize
+        if initial_configs is None:
+            configs = self._initialize_chains()
+        else:
+            configs = initial_configs.copy()
+        
+        current_log_psi = model(configs)
+        
+        samples = []
+        total_steps = self.warmup_steps + self.num_samples * self.steps_per_sweep
+        accepted = 0
+        total_proposals = 0
+        
+        # Create progress bar
+        pbar = tqdm(total=total_steps, disable=not show_progress,
+                   desc="MCMC sampling")
+        
+        for step in range(total_steps):
+            # Propose flip
+            proposed_configs, _ = self._propose_flip(configs)
+            proposed_log_psi = model(proposed_configs)
+            
+            # Accept/reject
+            accept_prob = self._acceptance_probability(current_log_psi, proposed_log_psi)
+            accept_mask = np.random.random(self.num_chains) < accept_prob
+            
+            # Update accepted chains
+            configs[accept_mask] = proposed_configs[accept_mask]
+            current_log_psi = tf.where(accept_mask, proposed_log_psi, current_log_psi)
+            
+            accepted += np.sum(accept_mask)
+            total_proposals += self.num_chains
+            
+            # Collect samples after warmup
+            if step >= self.warmup_steps and (step - self.warmup_steps) % self.steps_per_sweep == 0:
+                samples.append(configs.copy())
+            
+            pbar.update(1)
+        
+        pbar.close()
+        
+        # Combine samples from all chains
+        samples = np.concatenate(samples, axis=0)
+        
+        # Compute statistics
+        self.acceptance_rate = accepted / total_proposals
+        statistics = {
+            'acceptance_rate': self.acceptance_rate,
+            'num_samples': len(samples),
+            'num_chains': self.num_chains,
+            'warmup_steps': self.warmup_steps
+        }
+        
+        return samples, statistics
+
+
+class ParallelTempering:
+    """Parallel tempering (replica exchange) sampler.
+    
+    Runs multiple chains at different temperatures to improve mixing.
+    """
+    
+    def __init__(self,
+                 num_sites: int,
+                 num_samples: int = 1000,
+                 num_replicas: int = 4,
+                 temp_range: Tuple[float, float] = (0.1, 2.0),
+                 warmup_steps: int = 100,
+                 exchange_interval: int = 10):
+        """Initialize parallel tempering sampler.
+        
+        Args:
+            num_sites: Number of lattice sites
+            num_samples: Number of samples from lowest temperature
+            num_replicas: Number of temperature replicas
+            temp_range: (min_temp, max_temp) temperature range
+            warmup_steps: Thermalization steps
+            exchange_interval: Steps between replica exchange attempts
+        """
+        self.num_sites = num_sites
+        self.num_samples = num_samples
+        self.num_replicas = num_replicas
+        self.warmup_steps = warmup_steps
+        self.exchange_interval = exchange_interval
+        
+        # Set up temperature ladder (geometric spacing)
+        self.temperatures = np.geomspace(temp_range[0], temp_range[1], num_replicas)
+        self.beta = 1.0 / self.temperatures
+        
+        # Create sampler for each replica
+        self.samplers = [
+            MetropolisSampler(num_sites, num_samples, num_chains=1, 
+                            warmup_steps=0, sweep_factor=1)
+            for _ in range(num_replicas)
+        ]
+        
+        self.exchange_rate = 0.0
+    
+    def _exchange_replicas(self,
+                          configs: np.ndarray,
+                          log_psi: tf.Tensor) -> Tuple[np.ndarray, tf.Tensor, int]:
+        """Attempt replica exchange.
+        
+        Args:
+            configs: Current configurations for all replicas
+            log_psi: log|ψ(s)| for all replicas
+            
+        Returns:
+            Tuple of (updated_configs, updated_log_psi, num_exchanges)
+        """
+        num_exchanges = 0
+        
+        # Try exchanging adjacent temperature pairs
+        for i in range(self.num_replicas - 1):
+            # Exchange probability
+            delta_beta = self.beta[i] - self.beta[i + 1]
+            delta_log_psi = log_psi[i] - log_psi[i + 1]
+            log_prob = 2.0 * delta_beta * delta_log_psi
+            
+            if np.log(np.random.random()) < log_prob.numpy():
+                # Exchange configurations
+                configs[[i, i + 1]] = configs[[i + 1, i]]
+                log_psi = tf.tensor_scatter_nd_update(
+                    log_psi, [[i], [i + 1]], [log_psi[i + 1], log_psi[i]])
+                num_exchanges += 1
+        
+        return configs, log_psi, num_exchanges
+    
+    def sample(self,
+               model: Callable[[np.ndarray], tf.Tensor],
+               show_progress: bool = True) -> Tuple[np.ndarray, Dict[str, float]]:
+        """Sample using parallel tempering.
+        
+        Args:
+            model: Function computing log|ψ(s)|
+            show_progress: Show progress bar
+            
+        Returns:
+            Samples from the lowest temperature (target distribution)
+        """
+        # Initialize all replicas
+        configs = 2 * np.random.randint(0, 2, 
+                                       size=(self.num_replicas, self.num_sites)) - 1
+        log_psi = model(configs)
+        
+        samples = []
+        total_exchanges = 0
+        exchange_attempts = 0
+        
+        total_steps = self.warmup_steps + self.num_samples
+        pbar = tqdm(total=total_steps, disable=not show_progress,
+                   desc="Parallel tempering")
+        
+        for step in range(total_steps):
+            # Update each replica
+            for replica_idx in range(self.num_replicas):
+                # Single Metropolis step at this temperature
+                proposed_config, _ = self.samplers[replica_idx]._propose_flip(
+                    configs[replica_idx:replica_idx+1])
+                proposed_log_psi = model(proposed_config)
+                
+                # Temperature-scaled acceptance
+                log_prob_ratio = 2.0 * self.beta[replica_idx] * (
+                    proposed_log_psi - log_psi[replica_idx])
+                
+                if np.log(np.random.random()) < log_prob_ratio.numpy()[0]:
+                    configs[replica_idx] = proposed_config[0]
+                    log_psi = tf.tensor_scatter_nd_update(
+                        log_psi, [[replica_idx]], [proposed_log_psi[0]])
+            
+            # Attempt replica exchange
+            if step % self.exchange_interval == 0:
+                configs, log_psi, num_ex = self._exchange_replicas(configs, log_psi)
+                total_exchanges += num_ex
+                exchange_attempts += self.num_replicas - 1
+            
+            # Collect samples from lowest temperature after warmup
+            if step >= self.warmup_steps:
+                samples.append(configs[0].copy())
+            
+            pbar.update(1)
+        
+        pbar.close()
+        
+        samples = np.array(samples)
+        self.exchange_rate = total_exchanges / exchange_attempts if exchange_attempts > 0 else 0.0
+        
+        statistics = {
+            'exchange_rate': self.exchange_rate,
+            'temperatures': self.temperatures.tolist(),
+            'num_samples': len(samples),
+        }
+        
+        return samples, statistics
+
+
+def compute_autocorrelation(samples: np.ndarray, max_lag: int = 100) -> np.ndarray:
+    """Compute autocorrelation function of samples.
+    
+    Args:
+        samples: Time series data (num_samples, ...)
+        max_lag: Maximum lag to compute
+        
+    Returns:
+        Autocorrelation function
+    """
+    n = len(samples)
+    max_lag = min(max_lag, n // 2)
+    
+    # Flatten samples for autocorrelation
+    if samples.ndim > 1:
+        samples_flat = samples.reshape(n, -1).mean(axis=1)
+    else:
+        samples_flat = samples
+    
+    mean = np.mean(samples_flat)
+    var = np.var(samples_flat)
+    
+    autocorr = np.zeros(max_lag)
+    for lag in range(max_lag):
+        autocorr[lag] = np.mean(
+            (samples_flat[:n-lag] - mean) * (samples_flat[lag:] - mean)) / var
+    
+    return autocorr
+
+
+def estimate_correlation_time(samples: np.ndarray, max_lag: int = 100) -> float:
+    """Estimate integrated autocorrelation time.
+    
+    τ_int = 1 + 2 Σ_{t=1}^{t_max} ρ(t)
+    
+    Args:
+        samples: Time series data
+        max_lag: Maximum lag for autocorrelation
+        
+    Returns:
+        Integrated autocorrelation time
+    """
+    autocorr = compute_autocorrelation(samples, max_lag)
+    
+    # Find where autocorrelation becomes small (< 1/e)
+    cutoff = np.where(autocorr < np.exp(-1))[0]
+    if len(cutoff) > 0:
+        t_max = cutoff[0]
+    else:
+        t_max = len(autocorr)
+    
+    tau_int = 1.0 + 2.0 * np.sum(autocorr[1:t_max])
+    return max(1.0, tau_int)  # At least 1
+
+
+========================================================================
+FILE: nqs/stochastic_reconfiguration.py
+========================================================================
+"""Stochastic Reconfiguration optimizer for Neural Quantum States.
+
+Implements natural gradient descent using the quantum geometric tensor (Fubini-Study metric).
+"""
+
+import tensorflow as tf
+import numpy as np
+from typing import List, Dict, Optional, Tuple
+from scipy import linalg
+import time
+
+from .sampling import MetropolisSampler
+
+
+class StochasticReconfiguration:
+    """Stochastic Reconfiguration (SR) optimizer.
+    
+    Uses natural gradient: θ_{t+1} = θ_t - η S^{-1} F
+    where S is the quantum geometric tensor and F is the force (energy gradient).
+    """
+    
+    def __init__(self,
+                 model: tf.keras.Model,
+                 hamiltonian,
+                 sampler: MetropolisSampler,
+                 learning_rate: float = 0.01,
+                 diagonal_shift: float = 0.01,
+                 use_iterative: bool = False,
+                 max_iter: int = 1000):
+        """Initialize SR optimizer.
+        
+        Args:
+            model: NQS model
+            hamiltonian: Hamiltonian operator
+            sampler: MCMC sampler
+            learning_rate: Learning rate (preconditioner scale)
+            diagonal_shift: Regularization for S matrix (typically 0.001-0.1)
+            use_iterative: Use iterative solver (conjugate gradient) instead of direct
+            max_iter: Maximum iterations for iterative solver
+        """
+        self.model = model
+        self.hamiltonian = hamiltonian
+        self.sampler = sampler
+        self.learning_rate = learning_rate
+        self.diagonal_shift = diagonal_shift
+        self.use_iterative = use_iterative
+        self.max_iter = max_iter
+        
+        # Training history
+        self.history = {
+            'energy': [],
+            'energy_error': [],
+            'variance': [],
+            'gradient_norm': [],
+            'sr_condition_number': [],
+            'time_per_step': []
+        }
+    
+    def _compute_local_energies(self, samples: np.ndarray) -> np.ndarray:
+        """Compute local energies.
+        
+        Args:
+            samples: Spin configurations
+            
+        Returns:
+            Local energies
+        """
+        log_psi = self.model(samples, training=False)
+        
+        def log_psi_func(configs):
+            return self.model(configs, training=False)
+        
+        from .operators import spins_to_config
+        configs = np.array([spins_to_config(s) for s in samples])
+        e_loc = self.hamiltonian.local_energy(configs, log_psi_func)
+        
+        return e_loc
+    
+    def _compute_log_derivatives(self, samples: tf.Tensor) -> List[tf.Tensor]:
+        """Compute derivatives of log wavefunction.
+        
+        O_k = ∂log(ψ)/∂θ_k
+        
+        Args:
+            samples: Spin configurations
+            
+        Returns:
+            List of gradients (one per parameter)
+        """
+        with tf.GradientTape() as tape:
+            log_psi = self.model(samples, training=True)
+            # Sum to get total log amplitude
+            loss = tf.reduce_sum(log_psi)
+        
+        gradients = tape.gradient(loss, self.model.trainable_variables)
+        
+        return gradients
+    
+    def _compute_quantum_geometric_tensor(self,
+                                         samples: np.ndarray) -> Tuple[np.ndarray, List[np.ndarray]]:
+        """Compute quantum geometric tensor (Fubini-Study metric).
+        
+        S_kl = ⟨O_k^* O_l⟩ - ⟨O_k^*⟩⟨O_l⟩
+        
+        Args:
+            samples: Spin configurations
+            
+        Returns:
+            Tuple of (S_matrix, mean_derivatives)
+        """
+        samples_tf = tf.constant(samples, dtype=tf.float32)
+        
+        # Compute log derivatives for all samples
+        batch_size = len(samples)
+        all_derivatives = []
+        
+        # Process in batches to avoid memory issues
+        batch_sample_size = min(100, batch_size)
+        
+        for i in range(0, batch_size, batch_sample_size):
+            batch = samples_tf[i:i+batch_sample_size]
+            derivs = self._compute_log_derivatives(batch)
+            
+            # Convert to numpy and flatten
+            batch_derivs = []
+            for d in derivs:
+                if d is not None:
+                    batch_derivs.append(d.numpy())
+            
+            all_derivatives.append(batch_derivs)
+        
+        # Concatenate batches
+        num_params = len(all_derivatives[0])
+        concatenated_derivs = []
+        
+        for param_idx in range(num_params):
+            param_derivs = []
+            for batch_derivs in all_derivatives:
+                # Flatten parameter derivatives
+                flat = batch_derivs[param_idx].reshape(
+                    batch_derivs[param_idx].shape[0], -1)
+                param_derivs.append(flat)
+            concatenated_derivs.append(np.concatenate(param_derivs, axis=0))
+        
+        # Stack all parameters
+        O = np.concatenate([d for d in concatenated_derivs], axis=1)  # (batch, total_params)
+        
+        # Compute mean
+        O_mean = np.mean(O, axis=0, keepdims=True)
+        
+        # Center
+        O_centered = O - O_mean
+        
+        # Compute S = ⟨(O - ⟨O⟩)(O - ⟨O⟩)^T⟩
+        S = np.dot(O_centered.T, O_centered) / batch_size
+        
+        # Add diagonal regularization
+        S += self.diagonal_shift * np.eye(S.shape[0])
+        
+        return S, concatenated_derivs
+    
+    def _compute_force(self,
+                       samples: np.ndarray,
+                       e_loc: np.ndarray,
+                       derivatives: List[np.ndarray]) -> np.ndarray:
+        """Compute force vector.
+        
+        F_k = ⟨E_loc O_k⟩ - ⟨E_loc⟩⟨O_k⟩
+        
+        Args:
+            samples: Spin configurations
+            e_loc: Local energies
+            derivatives: Log derivatives for each parameter
+            
+        Returns:
+            Force vector (flattened)
+        """
+        samples_tf = tf.constant(samples, dtype=tf.float32)
+        e_loc_centered = e_loc - np.mean(e_loc)
+        
+        # Compute force for each parameter
+        forces = []
+        
+        for derivs in derivatives:
+            # derivs has shape (batch_size, *param_shape)
+            # Flatten parameter dimensions
+            batch_size = derivs.shape[0]
+            derivs_flat = derivs.reshape(batch_size, -1)
+            
+            # F = ⟨E_loc * O⟩ - ⟨E_loc⟩⟨O⟩ = ⟨(E_loc - ⟨E_loc⟩) * O⟩
+            force = np.dot(e_loc_centered, derivs_flat) / batch_size
+            forces.append(force)
+        
+        # Concatenate all forces
+        F = np.concatenate(forces)
+        
+        return F
+    
+    def _solve_sr_equation(self, S: np.ndarray, F: np.ndarray) -> np.ndarray:
+        """Solve S * x = F for natural gradient.
+        
+        Args:
+            S: Quantum geometric tensor
+            F: Force vector
+            
+        Returns:
+            Natural gradient x
+        """
+        if self.use_iterative:
+            # Use conjugate gradient
+            from scipy.sparse.linalg import cg
+            x, info = cg(S, F, maxiter=self.max_iter, atol=1e-5)
+            if info != 0:
+                print(f"Warning: CG did not converge (info={info})")
+        else:
+            # Direct solve
+            try:
+                x = linalg.solve(S, F, assume_a='pos')
+            except linalg.LinAlgError:
+                # Fallback to least squares if singular
+                x = linalg.lstsq(S, F)[0]
+        
+        return x
+    
+    def _unflatten_update(self, flat_update: np.ndarray) -> List[np.ndarray]:
+        """Convert flat update back to parameter shapes.
+        
+        Args:
+            flat_update: Flattened parameter update
+            
+        Returns:
+            List of updates matching model parameters
+        """
+        updates = []
+        idx = 0
+        
+        for var in self.model.trainable_variables:
+            param_size = np.prod(var.shape)
+            update = flat_update[idx:idx+param_size]
+            updates.append(update.reshape(var.shape))
+            idx += param_size
+        
+        return updates
+    
+    def train_step(self, show_progress: bool = False) -> Dict[str, float]:
+        """Perform one SR training step.
+        
+        Args:
+            show_progress: Show progress bar
+            
+        Returns:
+            Step metrics
+        """
+        start_time = time.time()
+        
+        # Sample configurations
+        samples, _ = self.sampler.sample(
+            lambda s: self.model(s, training=False),
+            show_progress=show_progress
+        )
+        
+        # Compute local energies
+        e_loc = self._compute_local_energies(samples)
+        
+        # Compute quantum geometric tensor and derivatives
+        S, derivatives = self._compute_quantum_geometric_tensor(samples)
+        
+        # Compute force
+        F = self._compute_force(samples, e_loc, derivatives)
+        
+        # Solve SR equation: S * update = F
+        flat_update = self._solve_sr_equation(S, F)
+        
+        # Unflatten and apply update
+        updates = self._unflatten_update(flat_update)
+        
+        for var, update in zip(self.model.trainable_variables, updates):
+            var.assign_sub(self.learning_rate * update)
+        
+        # Compute metrics
+        energy = np.mean(e_loc)
+        energy_std = np.std(e_loc) / np.sqrt(len(e_loc))
+        variance = np.var(e_loc)
+        grad_norm = np.linalg.norm(flat_update)
+        
+        # Condition number of S
+        try:
+            cond = np.linalg.cond(S)
+        except:
+            cond = np.inf
+        
+        step_time = time.time() - start_time
+        
+        metrics = {
+            'energy': float(energy),
+            'energy_error': float(energy_std),
+            'variance': float(variance),
+            'gradient_norm': float(grad_norm),
+            'sr_condition_number': float(cond),
+            'time_per_step': step_time
+        }
+        
+        return metrics
+    
+    def train(self,
+              num_steps: int,
+              log_interval: int = 10,
+              show_progress: bool = True) -> Dict[str, List[float]]:
+        """Train using Stochastic Reconfiguration.
+        
+        Args:
+            num_steps: Number of training steps
+            log_interval: Logging interval
+            show_progress: Show progress bar
+            
+        Returns:
+            Training history
+        """
+        from tqdm import tqdm
+        
+        pbar = tqdm(range(num_steps), disable=not show_progress, desc="SR training")
+        
+        for step in pbar:
+            # Training step
+            metrics = self.train_step(show_progress=False)
+            
+            # Log
+            for key, value in metrics.items():
+                self.history[key].append(value)
+            
+            # Update progress
+            if step % log_interval == 0:
+                pbar.set_postfix({
+                    'E': f"{metrics['energy']:.6f}",
+                    'σ': f"{metrics['energy_error']:.6f}",
+                    'cond': f"{metrics['sr_condition_number']:.2e}"
+                })
+        
+        pbar.close()
+        
+        return self.history
+
+
+class StatePreparation:
+    """State preparation using imaginary time evolution with SR.
+    
+    Prepares ground state by evolving in imaginary time: |ψ(τ)⟩ = e^(-τH)|ψ(0)⟩
+    """
+    
+    def __init__(self,
+                 model: tf.keras.Model,
+                 hamiltonian,
+                 sampler: MetropolisSampler,
+                 target_state: Optional[np.ndarray] = None,
+                 time_step: float = 0.01):
+        """Initialize state preparation.
+        
+        Args:
+            model: NQS model
+            hamiltonian: Hamiltonian
+            sampler: Sampler
+            target_state: Target state for fidelity tracking (optional)
+            time_step: Imaginary time step
+        """
+        self.sr_optimizer = StochasticReconfiguration(
+            model, hamiltonian, sampler,
+            learning_rate=time_step,
+            diagonal_shift=0.01
+        )
+        self.target_state = target_state
+        
+        self.history = {
+            'energy': [],
+            'fidelity': [],
+            'time': []
+        }
+    
+    def prepare(self,
+                num_steps: int,
+                fidelity_interval: int = 10,
+                show_progress: bool = True) -> Dict[str, List[float]]:
+        """Prepare ground state.
+        
+        Args:
+            num_steps: Number of imaginary time steps
+            fidelity_interval: Steps between fidelity computation
+            show_progress: Show progress
+            
+        Returns:
+            Preparation history
+        """
+        from tqdm import tqdm
+        
+        pbar = tqdm(range(num_steps), disable=not show_progress, 
+                   desc="State preparation")
+        
+        for step in pbar:
+            # SR step (imaginary time evolution)
+            metrics = self.sr_optimizer.train_step(show_progress=False)
+            
+            self.history['energy'].append(metrics['energy'])
+            self.history['time'].append(step * self.sr_optimizer.learning_rate)
+            
+            # Compute fidelity if target state provided
+            if self.target_state is not None and step % fidelity_interval == 0:
+                from .training import compute_fidelity
+                # Placeholder - would need proper implementation
+                fidelity = 0.0  # compute_fidelity(self.sr_optimizer.model, target)
+                self.history['fidelity'].append(fidelity)
+            
+            pbar.set_postfix({'E': f"{metrics['energy']:.6f}"})
+        
+        pbar.close()
+        
+        return self.history
+
+
+========================================================================
+FILE: nqs/training.py
+========================================================================
+"""Variational Monte Carlo training for Neural Quantum States.
+
+Implements VMC algorithm with gradient descent optimization.
+"""
+
+import tensorflow as tf
+import numpy as np
+from typing import Optional, Dict, List, Callable, Tuple
+from tqdm import tqdm
+import time
+
+from .sampling import MetropolisSampler, estimate_correlation_time
+from .operators import TransverseFieldIsing, Heisenberg
+
+
+class VMCTrainer:
+    """Variational Monte Carlo trainer for NQS.
+    
+    Minimizes energy expectation value E = ⟨ψ|H|ψ⟩/⟨ψ|ψ⟩ using gradient descent.
+    """
+    
+    def __init__(self,
+                 model: tf.keras.Model,
+                 hamiltonian,
+                 sampler: MetropolisSampler,
+                 optimizer: Optional[tf.keras.optimizers.Optimizer] = None,
+                 learning_rate: float = 1e-3):
+        """Initialize VMC trainer.
+        
+        Args:
+            model: NQS model
+            hamiltonian: Hamiltonian operator
+            sampler: MCMC sampler
+            optimizer: TensorFlow optimizer (defaults to Adam)
+            learning_rate: Learning rate
+        """
+        self.model = model
+        self.hamiltonian = hamiltonian
+        self.sampler = sampler
+        
+        if optimizer is None:
+            self.optimizer = tf.keras.optimizers.Adam(learning_rate)
+        else:
+            self.optimizer = optimizer
+        
+        # Training history
+        self.history = {
+            'energy': [],
+            'energy_error': [],
+            'variance': [],
+            'acceptance_rate': [],
+            'gradient_norm': [],
+            'time_per_step': []
+        }
+    
+    def _compute_local_energies(self, samples: np.ndarray) -> np.ndarray:
+        """Compute local energies for sampled configurations.
+        
+        E_loc(s) = ⟨s|H|ψ⟩/⟨s|ψ⟩
+        
+        Args:
+            samples: Spin configurations (num_samples, num_sites)
+            
+        Returns:
+            Local energies
+        """
+        # Get log amplitudes
+        log_psi = self.model(samples, training=False)
+        
+        # Create callable for Hamiltonian
+        def log_psi_func(configs):
+            return self.model(configs, training=False)
+        
+        # Compute local energies using Hamiltonian
+        if hasattr(self.hamiltonian, 'local_energy'):
+            # Convert samples to config integers if needed
+            if isinstance(self.hamiltonian, (TransverseFieldIsing, Heisenberg)):
+                from .operators import spins_to_config
+                configs = np.array([spins_to_config(s) for s in samples])
+                e_loc = self.hamiltonian.local_energy(configs, log_psi_func)
+            else:
+                e_loc = self.hamiltonian.local_energy(samples, log_psi)
+        else:
+            raise ValueError("Hamiltonian must implement local_energy method")
+        
+        return e_loc
+    
+    @tf.function
+    def _compute_energy_and_gradient(self, samples: tf.Tensor) -> Tuple[tf.Tensor, tf.Tensor, List[tf.Tensor]]:
+        """Compute energy and its gradient using automatic differentiation.
+        
+        Args:
+            samples: Spin configurations
+            
+        Returns:
+            Tuple of (energy, variance, gradients)
+        """
+        with tf.GradientTape() as tape:
+            # Forward pass
+            log_psi = self.model(samples, training=True)
+            
+            # Compute local energies (approximate via finite differences for efficiency)
+            # In practice, we use the precomputed local energies from sampling
+            # Here we return a placeholder for the gradient computation
+            energy = tf.constant(0.0, dtype=tf.float32)
+        
+        # Get gradients
+        gradients = tape.gradient(energy, self.model.trainable_variables)
+        
+        return energy, tf.constant(0.0), gradients
+    
+    def _compute_vmc_gradient(self, samples: np.ndarray, e_loc: np.ndarray) -> List[tf.Tensor]:
+        """Compute VMC gradient: ∇E = 2⟨E_loc ∇log|ψ|⟩ - 2⟨E_loc⟩⟨∇log|ψ|⟩.
+        
+        Args:
+            samples: Spin configurations
+            e_loc: Local energies
+            
+        Returns:
+            List of gradients for each trainable variable
+        """
+        samples_tf = tf.constant(samples, dtype=tf.float32)
+        e_loc_tf = tf.constant(e_loc, dtype=tf.float32)
+        
+        # Center local energies for numerical stability
+        e_mean = tf.reduce_mean(e_loc_tf)
+        e_loc_centered = e_loc_tf - e_mean
+        
+        with tf.GradientTape() as tape:
+            log_psi = self.model(samples_tf, training=True)
+            # Weight by centered local energy
+            loss = tf.reduce_mean(e_loc_centered * log_psi)
+        
+        # Compute gradient
+        gradients = tape.gradient(loss, self.model.trainable_variables)
+        
+        # Multiply by 2 (from derivative of |ψ|²)
+        gradients = [2.0 * g if g is not None else None for g in gradients]
+        
+        return gradients
+    
+    def train_step(self, show_progress: bool = False) -> Dict[str, float]:
+        """Perform one VMC training step.
+        
+        Args:
+            show_progress: Show sampling progress bar
+            
+        Returns:
+            Dictionary with step metrics
+        """
+        start_time = time.time()
+        
+        # Sample configurations
+        samples, sample_stats = self.sampler.sample(
+            lambda s: self.model(s, training=False),
+            show_progress=show_progress
+        )
+        
+        # Compute local energies
+        e_loc = self._compute_local_energies(samples)
+        
+        # Compute statistics
+        energy = np.mean(e_loc)
+        energy_var = np.var(e_loc)
+        energy_std = np.sqrt(energy_var / len(e_loc))
+        
+        # Compute and apply gradients
+        gradients = self._compute_vmc_gradient(samples, e_loc)
+        self.optimizer.apply_gradients(zip(gradients, self.model.trainable_variables))
+        
+        # Compute gradient norm
+        grad_norm = np.sqrt(sum(
+            tf.reduce_sum(g**2).numpy() for g in gradients if g is not None
+        ))
+        
+        step_time = time.time() - start_time
+        
+        metrics = {
+            'energy': float(energy),
+            'energy_error': float(energy_std),
+            'variance': float(energy_var),
+            'acceptance_rate': sample_stats['acceptance_rate'],
+            'gradient_norm': float(grad_norm),
+            'time_per_step': step_time
+        }
+        
+        return metrics
+    
+    def train(self, 
+              num_steps: int,
+              log_interval: int = 10,
+              show_progress: bool = True) -> Dict[str, List[float]]:
+        """Train NQS using VMC.
+        
+        Args:
+            num_steps: Number of training steps
+            log_interval: Steps between logging
+            show_progress: Show progress bar
+            
+        Returns:
+            Training history
+        """
+        pbar = tqdm(range(num_steps), disable=not show_progress, desc="VMC training")
+        
+        for step in pbar:
+            # Training step
+            metrics = self.train_step(show_progress=False)
+            
+            # Log metrics
+            for key, value in metrics.items():
+                self.history[key].append(value)
+            
+            # Update progress bar
+            if step % log_interval == 0:
+                pbar.set_postfix({
+                    'E': f"{metrics['energy']:.6f}",
+                    'σ': f"{metrics['energy_error']:.6f}",
+                    'acc': f"{metrics['acceptance_rate']:.3f}"
+                })
+        
+        pbar.close()
+        
+        return self.history
+    
+    def evaluate(self, num_samples: int = 10000) -> Dict[str, float]:
+        """Evaluate current model energy.
+        
+        Args:
+            num_samples: Number of samples for evaluation
+            
+        Returns:
+            Evaluation metrics
+        """
+        # Create temporary sampler with more samples
+        eval_sampler = MetropolisSampler(
+            self.sampler.num_sites,
+            num_samples=num_samples // self.sampler.num_chains,
+            num_chains=self.sampler.num_chains,
+            warmup_steps=self.sampler.warmup_steps
+        )
+        
+        # Sample
+        samples, _ = eval_sampler.sample(
+            lambda s: self.model(s, training=False),
+            show_progress=False
+        )
+        
+        # Compute energies
+        e_loc = self._compute_local_energies(samples)
+        
+        # Error estimation using blocking method
+        error = self._blocking_error(e_loc)
+        
+        # Autocorrelation analysis
+        tau_int = estimate_correlation_time(e_loc)
+        
+        return {
+            'energy': float(np.mean(e_loc)),
+            'energy_std': float(np.std(e_loc)),
+            'energy_error': float(error),
+            'variance': float(np.var(e_loc)),
+            'tau_int': float(tau_int),
+            'eff_samples': len(e_loc) / tau_int
+        }
+    
+    def _blocking_error(self, data: np.ndarray, max_block_size: int = 512) -> float:
+        """Estimate error using blocking method.
+        
+        Args:
+            data: Observable data
+            max_block_size: Maximum block size
+            
+        Returns:
+            Error estimate
+        """
+        n = len(data)
+        block_size = 1
+        errors = []
+        
+        while block_size <= min(max_block_size, n // 4):
+            # Reshape into blocks
+            n_blocks = n // block_size
+            blocked = data[:n_blocks * block_size].reshape(n_blocks, block_size)
+            block_means = np.mean(blocked, axis=1)
+            
+            # Error from block means
+            error = np.std(block_means) / np.sqrt(n_blocks - 1)
+            errors.append(error)
+            
+            block_size *= 2
+        
+        # Return maximum (most conservative estimate)
+        return max(errors) if errors else np.std(data) / np.sqrt(n)
+
+
+class AdaptiveLearningRate:
+    """Adaptive learning rate scheduler for VMC.
+    
+    Adjusts learning rate based on energy variance.
+    """
+    
+    def __init__(self,
+                 initial_lr: float = 1e-3,
+                 patience: int = 10,
+                 factor: float = 0.5,
+                 min_lr: float = 1e-6):
+        """Initialize adaptive scheduler.
+        
+        Args:
+            initial_lr: Initial learning rate
+            patience: Steps to wait before reducing
+            factor: Reduction factor
+            min_lr: Minimum learning rate
+        """
+        self.initial_lr = initial_lr
+        self.patience = patience
+        self.factor = factor
+        self.min_lr = min_lr
+        
+        self.current_lr = initial_lr
+        self.best_energy = float('inf')
+        self.wait = 0
+    
+    def step(self, energy: float) -> float:
+        """Update learning rate based on energy.
+        
+        Args:
+            energy: Current energy
+            
+        Returns:
+            Updated learning rate
+        """
+        if energy < self.best_energy:
+            self.best_energy = energy
+            self.wait = 0
+        else:
+            self.wait += 1
+        
+        if self.wait >= self.patience:
+            self.current_lr = max(self.current_lr * self.factor, self.min_lr)
+            self.wait = 0
+        
+        return self.current_lr
+
+
+def compute_fidelity(model1: tf.keras.Model,
+                    model2: tf.keras.Model,
+                    num_samples: int = 1000,
+                    num_sites: int = 4) -> float:
+    """Compute fidelity between two quantum states.
+    
+    F = |⟨ψ₁|ψ₂⟩|² / (⟨ψ₁|ψ₁⟩⟨ψ₂|ψ₂⟩)
+    
+    Args:
+        model1: First NQS model
+        model2: Second NQS model
+        num_samples: Number of samples for estimation
+        num_sites: Number of sites
+        
+    Returns:
+        Fidelity estimate
+    """
+    # Generate random configurations
+    samples = 2 * np.random.randint(0, 2, size=(num_samples, num_sites)) - 1
+    
+    # Get amplitudes
+    log_psi1 = model1(samples, training=False).numpy()
+    log_psi2 = model2(samples, training=False).numpy()
+    
+    # Compute overlap
+    log_overlap = log_psi1 + log_psi2
+    overlap_sq = np.mean(np.exp(2 * log_overlap))
+    
+    # Normalizations
+    norm1_sq = np.mean(np.exp(2 * log_psi1))
+    norm2_sq = np.mean(np.exp(2 * log_psi2))
+    
+    fidelity = overlap_sq / (norm1_sq * norm2_sq)
+    
+    return float(np.abs(fidelity))
+
+
+========================================================================
+FILE: tests/__init__.py
+========================================================================
+"""Test suite for Neural Quantum States."""
+
+
+========================================================================
+FILE: tests/test_operators.py
+========================================================================
+"""Unit tests for quantum operators."""
+
+import pytest
+import numpy as np
+import sys
+import os
+
+# Add parent directory to path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from nqs.operators import (
+    SpinOperators,
+    TransverseFieldIsing,
+    Heisenberg,
+    config_to_spins,
+    spins_to_config
+)
+
+
+class TestSpinOperators:
+    """Test spin operator functionality."""
+    
+    def test_sigma_z(self):
+        """Test σ^z operator."""
+        num_sites = 2
+        
+        # Test site 0
+        sz = SpinOperators.sigma_z(0, num_sites)
+        
+        # Check values for all configurations
+        # |00⟩ -> +1, |01⟩ -> +1, |10⟩ -> -1, |11⟩ -> -1
+        expected = np.array([1, 1, -1, -1])
+        np.testing.assert_array_equal(sz, expected)
+    
+    def test_sigma_x(self):
+        """Test σ^x operator."""
+        num_sites = 2
+        
+        # Test site 0
+        connected, mel = SpinOperators.sigma_x(0, num_sites)
+        
+        # σ^x flips the bit at site 0
+        # |00⟩ -> |10⟩, |01⟩ -> |11⟩, |10⟩ -> |00⟩, |11⟩ -> |01⟩
+        expected_connected = np.array([2, 3, 0, 1])
+        np.testing.assert_array_equal(connected, expected_connected)
+        
+        # All matrix elements should be 1
+        np.testing.assert_array_equal(mel, np.ones(4))
+
+
+class TestTransverseFieldIsing:
+    """Test TFIM Hamiltonian."""
+    
+    def test_initialization(self):
+        """Test Hamiltonian initialization."""
+        hamiltonian = TransverseFieldIsing(
+            num_sites=4,
+            J=1.0,
+            h=1.0,
+            pbc=True
+        )
+        
+        assert hamiltonian.num_sites == 4
+        assert hamiltonian.J == 1.0
+        assert hamiltonian.h == 1.0
+        assert hamiltonian.pbc == True
+    
+    def test_diagonal_energy_two_sites(self):
+        """Test diagonal energy for 2-site system."""
+        hamiltonian = TransverseFieldIsing(
+            num_sites=2,
+            J=1.0,
+            h=0.0,  # No transverse field
+            pbc=True
+        )
+        
+        # Check diagonal energies
+        # |00⟩: σ^z_0 = +1, σ^z_1 = +1 -> E = -J*(+1)*(+1) = -1
+        # |11⟩: σ^z_0 = -1, σ^z_1 = -1 -> E = -J*(-1)*(-1) = -1
+        # |01⟩, |10⟩: E = -J*(+1)*(-1) = +1
+        
+        assert hamiltonian.diagonal_energy[0] == -1.0  # |00⟩
+        assert hamiltonian.diagonal_energy[1] == 1.0   # |01⟩
+        assert hamiltonian.diagonal_energy[2] == 1.0   # |10⟩
+        assert hamiltonian.diagonal_energy[3] == -1.0  # |11⟩
+
+
+class TestHelperFunctions:
+    """Test utility functions."""
+    
+    def test_config_to_spins(self):
+        """Test configuration to spins conversion."""
+        num_sites = 3
+        
+        # Config 0 = |000⟩ = [+1, +1, +1]
+        spins = config_to_spins(0, num_sites)
+        np.testing.assert_array_equal(spins, [1, 1, 1])
+        
+        # Config 7 = |111⟩ = [-1, -1, -1]
+        spins = config_to_spins(7, num_sites)
+        np.testing.assert_array_equal(spins, [-1, -1, -1])
+        
+        # Config 5 = |101⟩ = [-1, +1, -1]
+        spins = config_to_spins(5, num_sites)
+        np.testing.assert_array_equal(spins, [-1, 1, -1])
+    
+    def test_spins_to_config(self):
+        """Test spins to configuration conversion."""
+        # [+1, +1, +1] -> 0
+        config = spins_to_config(np.array([1, 1, 1]))
+        assert config == 0
+        
+        # [-1, -1, -1] -> 7
+        config = spins_to_config(np.array([-1, -1, -1]))
+        assert config == 7
+        
+        # [-1, +1, -1] -> 5
+        config = spins_to_config(np.array([-1, 1, -1]))
+        assert config == 5
+    
+    def test_roundtrip_conversion(self):
+        """Test that conversions are inverses."""
+        num_sites = 4
+        
+        for config in range(2**num_sites):
+            spins = config_to_spins(config, num_sites)
+            config_back = spins_to_config(spins)
+            assert config == config_back
+
+
+if __name__ == "__main__":
+    pytest.main([__file__, "-v"])
+
+
+========================================================================
+FILE: tests/test_sampling.py
+========================================================================
+"""Unit tests for MCMC sampling."""
+
+import pytest
+import numpy as np
+import tensorflow as tf
+import sys
+import os
+
+# Add parent directory to path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from nqs.sampling import (
+    MetropolisSampler,
+    compute_autocorrelation,
+    estimate_correlation_time
+)
+from nqs.models import RBM
+
+
+class TestMetropolisSampler:
+    """Test Metropolis-Hastings sampler."""
+    
+    def test_initialization(self):
+        """Test sampler initialization."""
+        sampler = MetropolisSampler(
+            num_sites=4,
+            num_samples=100,
+            num_chains=2,
+            warmup_steps=10
+        )
+        
+        assert sampler.num_sites == 4
+        assert sampler.num_samples == 100
+        assert sampler.num_chains == 2
+        assert sampler.warmup_steps == 10
+    
+    def test_initialize_chains(self):
+        """Test chain initialization."""
+        sampler = MetropolisSampler(
+            num_sites=4,
+            num_samples=100,
+            num_chains=3
+        )
+        
+        configs = sampler._initialize_chains()
+        
+        # Check shape
+        assert configs.shape == (3, 4)
+        
+        # Check values are ±1
+        assert np.all((configs == 1) | (configs == -1))
+    
+    def test_propose_flip(self):
+        """Test single-spin flip proposal."""
+        sampler = MetropolisSampler(
+            num_sites=4,
+            num_samples=100,
+            num_chains=2
+        )
+        
+        configs = np.array([[1, 1, -1, -1], [1, -1, 1, -1]])
+        proposed, sites = sampler._propose_flip(configs)
+        
+        # Check that exactly one spin was flipped per chain
+        for i in range(2):
+            diff = configs[i] != proposed[i]
+            assert np.sum(diff) == 1
+    
+    def test_sampling(self):
+        """Test full sampling procedure."""
+        # Create simple model
+        model = RBM(num_sites=4, num_hidden=8)
+        
+        sampler = MetropolisSampler(
+            num_sites=4,
+            num_samples=50,
+            num_chains=2,
+            warmup_steps=10
+        )
+        
+        # Sample
+        samples, stats = sampler.sample(
+            model=lambda s: model(s, training=False),
+            show_progress=False
+        )
+        
+        # Check output shape
+        expected_samples = 50 * 2  # num_samples * num_chains
+        assert samples.shape == (expected_samples, 4)
+        
+        # Check statistics
+        assert 'acceptance_rate' in stats
+        assert 0 <= stats['acceptance_rate'] <= 1
+
+
+class TestAutocorrelation:
+    """Test autocorrelation analysis."""
+    
+    def test_compute_autocorrelation(self):
+        """Test autocorrelation computation."""
+        # Create synthetic data with known autocorrelation
+        n = 1000
+        t = np.arange(n)
+        
+        # White noise (no autocorrelation)
+        data = np.random.randn(n)
+        autocorr = compute_autocorrelation(data, max_lag=50)
+        
+        # First value should be 1 (self-correlation)
+        assert np.abs(autocorr[0] - 1.0) < 1e-10
+        
+        # Others should be small for white noise
+        assert np.abs(np.mean(autocorr[1:])) < 0.1
+    
+    def test_estimate_correlation_time(self):
+        """Test correlation time estimation."""
+        # White noise
+        data = np.random.randn(1000)
+        tau = estimate_correlation_time(data, max_lag=50)
+        
+        # Should be close to 1 for white noise
+        assert 0.5 <= tau <= 2.0
+        
+        # Highly correlated data
+        data_corr = np.repeat(np.random.randn(100), 10)
+        tau_corr = estimate_correlation_time(data_corr, max_lag=50)
+        
+        # Should be larger
+        assert tau_corr > tau
+
+
+if __name__ == "__main__":
+    pytest.main([__file__, "-v"])
+
+
+========================================================================
+FILE: tests/test_training.py
+========================================================================
+"""Tests for training module."""
+
+import pytest
+import numpy as np
+import tensorflow as tf
+from nqs import MLP, TFIMHamiltonian, VMCTrainer, MetropolisSampler
+
+
+class TestModelCreation:
+    """Test model creation and building."""
+    
+    def test_mlp_creation(self):
+        """Test MLP model creation."""
+        model = MLP(num_sites=4, hidden_sizes=[32])
+        # Build model by passing dummy input
+        dummy_input = tf.ones((1, 4))
+        _ = model(dummy_input)
+        assert model.built
+        assert model.count_params() > 0
+    
+    def test_mlp_forward_pass(self):
+        """Test MLP forward pass."""
+        model = MLP(num_sites=4, hidden_sizes=[16])
+        dummy_input = tf.ones((5, 4))
+        output = model(dummy_input)
+        assert output is not None
+        assert output.shape[0] == 5
+
+
+class TestHamiltonian:
+    """Test Hamiltonian creation."""
+    
+    def test_tfim_creation(self):
+        """Test TFIM Hamiltonian creation."""
+        hamiltonian = TFIMHamiltonian(num_sites=4, J=1.0, h=0.5)
+        assert hamiltonian is not None
+
+
+class TestSampler:
+    """Test MCMC sampler."""
+    
+    def test_sampler_creation(self):
+        """Test MetropolisSampler creation."""
+        model = MLP(num_sites=4, hidden_sizes=[16])
+        # Build model
+        _ = model(tf.ones((1, 4)))
+        
+        sampler = MetropolisSampler(model, num_sites=4)
+        assert sampler is not None
+
+
+class TestVMCTrainer:
+    """Test VMC training."""
+    
+    def test_trainer_creation(self):
+        """Test creating VMC trainer with correct signature."""
+        # Create and build model
+        model = MLP(num_sites=4, hidden_sizes=[32])
+        _ = model(tf.ones((1, 4)))
+        
+        # Create components
+        hamiltonian = TFIMHamiltonian(num_sites=4, J=1.0, h=0.5)
+        sampler = MetropolisSampler(model, num_sites=4)
+        
+        # Create trainer with correct signature: (model, hamiltonian, sampler)
+        trainer = VMCTrainer(model, hamiltonian, sampler)
+        assert trainer is not None
+    
+    def test_trainer_with_learning_rate(self):
+        """Test VMC trainer with custom learning rate."""
+        model = MLP(num_sites=4, hidden_sizes=[16])
+        _ = model(tf.ones((1, 4)))
+        
+        hamiltonian = TFIMHamiltonian(num_sites=4, J=1.0, h=0.5)
+        sampler = MetropolisSampler(model, num_sites=4)
+        
+        # Create with custom learning rate
+        trainer = VMCTrainer(model, hamiltonian, sampler, learning_rate=0.01)
+        assert trainer is not None
+
+
+class TestIntegration:
+    """Integration tests for full workflow."""
+    
+    def test_complete_setup(self):
+        """Test complete VMC setup."""
+        L = 4
+        
+        # Create model
+        model = MLP(num_sites=L, hidden_sizes=[32])
+        _ = model(tf.ones((1, L)))
+        
+        # Create Hamiltonian
+        hamiltonian = TFIMHamiltonian(num_sites=L, J=1.0, h=0.5)
+        
+        # Create sampler
+        sampler = MetropolisSampler(model, num_sites=L)
+        
+        # Create trainer
+        trainer = VMCTrainer(model, hamiltonian, sampler, learning_rate=0.001)
+        
+        # Verify all components
+        assert model.count_params() > 0
+        assert hamiltonian is not None
+        assert sampler is not None
+        assert trainer is not None
+
+
+if __name__ == "__main__":
+    pytest.main([__file__, "-v"])
+
+
+========================================================================
+FILE: utils/__init__.py
+========================================================================
+"""Utility modules for NQS analysis and visualization."""
+
+from .diagnostics import (
+    blocking_analysis,
+    jackknife_error,
+    bootstrap_error,
+    integrated_autocorrelation_time,
+    effective_sample_size,
+    geweke_test,
+    gelman_rubin_diagnostic,
+    compute_running_average,
+    detect_outliers
+)
+
+from .plotting import (
+    plot_training_history,
+    plot_autocorrelation,
+    plot_blocking_analysis,
+    plot_energy_histogram,
+    plot_spin_correlation,
+    plot_wavefunction_amplitudes,
+    plot_convergence_comparison
+)
+
+__all__ = [
+    # Diagnostics
+    'blocking_analysis',
+    'jackknife_error',
+    'bootstrap_error',
+    'integrated_autocorrelation_time',
+    'effective_sample_size',
+    'geweke_test',
+    'gelman_rubin_diagnostic',
+    'compute_running_average',
+    'detect_outliers',
+    
+    # Plotting
+    'plot_training_history',
+    'plot_autocorrelation',
+    'plot_blocking_analysis',
+    'plot_energy_histogram',
+    'plot_spin_correlation',
+    'plot_wavefunction_amplitudes',
+    'plot_convergence_comparison',
+]
+
+
+========================================================================
+FILE: utils/diagnostics.py
+========================================================================
+"""Statistical diagnostics for VMC simulations.
+
+Tools for error analysis, autocorrelation, and blocking methods.
+"""
+
+import numpy as np
+from typing import Tuple, Optional, Dict
+from scipy import stats
+
+
+def blocking_analysis(data: np.ndarray, 
+                     max_block_size: Optional[int] = None) -> Dict[str, np.ndarray]:
+    """Perform blocking analysis for error estimation.
+    
+    The blocking method estimates the error by grouping correlated samples
+    into blocks and computing statistics on block averages.
+    
+    Args:
+        data: Time series data (num_samples,)
+        max_block_size: Maximum block size (default: len(data)//4)
+        
+    Returns:
+        Dictionary containing:
+            - block_sizes: Array of block sizes
+            - errors: Error estimates for each block size
+            - plateau_error: Best error estimate (from plateau)
+    """
+    n = len(data)
+    
+    if max_block_size is None:
+        max_block_size = n // 4
+    
+    block_sizes = []
+    errors = []
+    
+    block_size = 1
+    while block_size <= max_block_size:
+        n_blocks = n // block_size
+        if n_blocks < 2:
+            break
+        
+        # Reshape into blocks
+        blocked = data[:n_blocks * block_size].reshape(n_blocks, block_size)
+        block_means = np.mean(blocked, axis=1)
+        
+        # Standard error of block means
+        error = np.std(block_means, ddof=1) / np.sqrt(n_blocks)
+        
+        block_sizes.append(block_size)
+        errors.append(error)
+        
+        block_size *= 2
+    
+    block_sizes = np.array(block_sizes)
+    errors = np.array(errors)
+    
+    # Find plateau (where error stabilizes)
+    if len(errors) > 3:
+        # Use maximum as conservative estimate
+        plateau_error = np.max(errors)
+    else:
+        plateau_error = errors[-1] if len(errors) > 0 else np.std(data) / np.sqrt(n)
+    
+    return {
+        'block_sizes': block_sizes,
+        'errors': errors,
+        'plateau_error': plateau_error
+    }
+
+
+def jackknife_error(data: np.ndarray, 
+                   func: Optional[callable] = None) -> Tuple[float, float]:
+    """Compute jackknife error estimate.
+    
+    Args:
+        data: Sample data
+        func: Function to compute statistic (default: mean)
+        
+    Returns:
+        Tuple of (estimate, error)
+    """
+    if func is None:
+        func = np.mean
+    
+    n = len(data)
+    
+    # Full sample estimate
+    theta = func(data)
+    
+    # Leave-one-out estimates
+    theta_i = np.zeros(n)
+    for i in range(n):
+        mask = np.ones(n, dtype=bool)
+        mask[i] = False
+        theta_i[i] = func(data[mask])
+    
+    # Jackknife estimate
+    theta_jack = n * theta - (n - 1) * np.mean(theta_i)
+    
+    # Jackknife error
+    error = np.sqrt((n - 1) * np.mean((theta_i - np.mean(theta_i))**2))
+    
+    return theta_jack, error
+
+
+def bootstrap_error(data: np.ndarray,
+                   func: Optional[callable] = None,
+                   num_bootstrap: int = 1000,
+                   confidence: float = 0.95) -> Dict[str, float]:
+    """Compute bootstrap error estimate and confidence intervals.
+    
+    Args:
+        data: Sample data
+        func: Function to compute statistic (default: mean)
+        num_bootstrap: Number of bootstrap samples
+        confidence: Confidence level for intervals
+        
+    Returns:
+        Dictionary with estimate, error, and confidence intervals
+    """
+    if func is None:
+        func = np.mean
+    
+    n = len(data)
+    
+    # Original estimate
+    theta = func(data)
+    
+    # Bootstrap samples
+    bootstrap_estimates = np.zeros(num_bootstrap)
+    for i in range(num_bootstrap):
+        indices = np.random.randint(0, n, size=n)
+        bootstrap_estimates[i] = func(data[indices])
+    
+    # Error estimate
+    error = np.std(bootstrap_estimates, ddof=1)
+    
+    # Confidence intervals
+    alpha = 1 - confidence
+    lower = np.percentile(bootstrap_estimates, 100 * alpha / 2)
+    upper = np.percentile(bootstrap_estimates, 100 * (1 - alpha / 2))
+    
+    return {
+        'estimate': theta,
+        'error': error,
+        'lower_ci': lower,
+        'upper_ci': upper,
+        'bootstrap_samples': bootstrap_estimates
+    }
+
+
+def integrated_autocorrelation_time(data: np.ndarray,
+                                   max_lag: Optional[int] = None,
+                                   window: str = 'auto') -> Tuple[float, np.ndarray]:
+    """Compute integrated autocorrelation time.
+    
+    τ_int = 1/2 + Σ_{t=1}^{W} ρ(t)
+    
+    Args:
+        data: Time series data
+        max_lag: Maximum lag to compute (default: len(data)//2)
+        window: Window size ('auto' or integer)
+        
+    Returns:
+        Tuple of (tau_int, autocorrelation_function)
+    """
+    n = len(data)
+    
+    if max_lag is None:
+        max_lag = n // 2
+    
+    # Compute autocorrelation
+    mean = np.mean(data)
+    var = np.var(data)
+    
+    if var == 0:
+        return 1.0, np.zeros(1)
+    
+    autocorr = np.zeros(max_lag)
+    for lag in range(max_lag):
+        autocorr[lag] = np.mean((data[:n-lag] - mean) * (data[lag:] - mean)) / var
+    
+    # Determine window
+    if window == 'auto':
+        # Find where autocorr becomes small and oscillatory
+        # Use criterion: autocorr[t] < exp(-t/tau_int)
+        tau_int = 0.5
+        for t in range(1, max_lag):
+            tau_int += autocorr[t]
+            
+            # Check for convergence
+            if t > 5 * tau_int:
+                break
+            
+            # Check if autocorr becomes too small
+            if autocorr[t] < 0.01:
+                break
+        
+        tau_int = max(0.5, tau_int)
+    else:
+        W = int(window)
+        tau_int = 0.5 + np.sum(autocorr[1:W+1])
+    
+    return tau_int, autocorr
+
+
+def effective_sample_size(data: np.ndarray) -> float:
+    """Compute effective sample size accounting for autocorrelation.
+    
+    n_eff = n / (2 * τ_int)
+    
+    Args:
+        data: Time series data
+        
+    Returns:
+        Effective number of independent samples
+    """
+    n = len(data)
+    tau_int, _ = integrated_autocorrelation_time(data)
+    
+    n_eff = n / (2.0 * tau_int)
+    
+    return max(1.0, n_eff)
+
+
+def geweke_test(data: np.ndarray,
+               first_frac: float = 0.1,
+               last_frac: float = 0.5,
+               num_intervals: int = 20) -> Dict[str, np.ndarray]:
+    """Geweke convergence diagnostic.
+    
+    Compares means from early and late parts of the chain.
+    
+    Args:
+        data: Time series data
+        first_frac: Fraction of chain for first window
+        last_frac: Fraction of chain for last window
+        num_intervals: Number of test intervals
+        
+    Returns:
+        Dictionary with z-scores and p-values
+    """
+    n = len(data)
+    
+    # First window
+    first_size = int(first_frac * n)
+    first_data = data[:first_size]
+    first_mean = np.mean(first_data)
+    first_var = np.var(first_data, ddof=1) / first_size
+    
+    # Test multiple intervals in last part
+    last_size = int(last_frac * n)
+    interval_size = last_size // num_intervals
+    
+    z_scores = []
+    p_values = []
+    
+    for i in range(num_intervals):
+        start = n - last_size + i * interval_size
+        end = start + interval_size
+        
+        if end > n:
+            break
+        
+        last_data = data[start:end]
+        last_mean = np.mean(last_data)
+        last_var = np.var(last_data, ddof=1) / len(last_data)
+        
+        # Z-score
+        z = (first_mean - last_mean) / np.sqrt(first_var + last_var)
+        z_scores.append(z)
+        
+        # P-value (two-tailed)
+        p = 2 * (1 - stats.norm.cdf(abs(z)))
+        p_values.append(p)
+    
+    return {
+        'z_scores': np.array(z_scores),
+        'p_values': np.array(p_values),
+        'converged': np.all(np.array(p_values) > 0.05)  # 95% confidence
+    }
+
+
+def gelman_rubin_diagnostic(chains: np.ndarray) -> float:
+    """Gelman-Rubin convergence diagnostic (R-hat).
+    
+    Compares within-chain and between-chain variance.
+    R-hat should be close to 1 for convergence.
+    
+    Args:
+        chains: Multiple chains, shape (num_chains, num_samples)
+        
+    Returns:
+        R-hat statistic
+    """
+    num_chains, n = chains.shape
+    
+    # Chain means
+    chain_means = np.mean(chains, axis=1)
+    overall_mean = np.mean(chain_means)
+    
+    # Between-chain variance
+    B = n / (num_chains - 1) * np.sum((chain_means - overall_mean)**2)
+    
+    # Within-chain variance
+    chain_vars = np.var(chains, axis=1, ddof=1)
+    W = np.mean(chain_vars)
+    
+    # Pooled variance estimate
+    var_plus = ((n - 1) / n) * W + (1 / n) * B
+    
+    # R-hat
+    R_hat = np.sqrt(var_plus / W)
+    
+    return R_hat
+
+
+def compute_running_average(data: np.ndarray, 
+                           window: int = 100) -> np.ndarray:
+    """Compute running average.
+    
+    Args:
+        data: Time series
+        window: Window size for averaging
+        
+    Returns:
+        Running average
+    """
+    if window == 1:
+        return data
+    
+    cumsum = np.cumsum(np.insert(data, 0, 0))
+    running_avg = (cumsum[window:] - cumsum[:-window]) / window
+    
+    # Pad beginning
+    padded = np.concatenate([
+        np.cumsum(data[:window]) / np.arange(1, window + 1),
+        running_avg
+    ])
+    
+    return padded
+
+
+def detect_outliers(data: np.ndarray, 
+                   threshold: float = 3.0) -> np.ndarray:
+    """Detect outliers using modified Z-score.
+    
+    Args:
+        data: Data array
+        threshold: Number of standard deviations for outlier
+        
+    Returns:
+        Boolean mask of outliers
+    """
+    median = np.median(data)
+    mad = np.median(np.abs(data - median))
+    
+    if mad == 0:
+        # Use standard deviation instead
+        std = np.std(data)
+        if std == 0:
+            return np.zeros(len(data), dtype=bool)
+        modified_z_scores = np.abs(data - np.mean(data)) / std
+    else:
+        modified_z_scores = 0.6745 * np.abs(data - median) / mad
+    
+    return modified_z_scores > threshold
+
+
+========================================================================
+FILE: utils/plotting.py
+========================================================================
+"""Visualization utilities for NQS training and analysis."""
+
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from typing import Dict, List, Optional, Tuple
+import matplotlib.gridspec as gridspec
+
+
+# Set style
+sns.set_style("whitegrid")
+plt.rcParams['figure.figsize'] = (10, 6)
+plt.rcParams['font.size'] = 12
+
+
+def plot_training_history(history: Dict[str, List[float]],
+                         save_path: Optional[str] = None,
+                         show: bool = True) -> plt.Figure:
+    """Plot VMC/SR training history.
+    
+    Args:
+        history: Training history dictionary
+        save_path: Path to save figure (optional)
+        show: Whether to display the figure
+        
+    Returns:
+        Matplotlib figure
+    """
+    fig = plt.figure(figsize=(14, 10))
+    gs = gridspec.GridSpec(3, 2, hspace=0.3, wspace=0.3)
+    
+    # Energy
+    ax1 = fig.add_subplot(gs[0, :])
+    steps = np.arange(len(history['energy']))
+    
+    ax1.plot(steps, history['energy'], 'b-', alpha=0.7, label='Energy')
+    if 'energy_error' in history:
+        energy = np.array(history['energy'])
+        error = np.array(history['energy_error'])
+        ax1.fill_between(steps, energy - error, energy + error, 
+                        alpha=0.2, color='b', label='±1σ')
+    
+    ax1.set_xlabel('Training Step')
+    ax1.set_ylabel('Energy')
+    ax1.set_title('Energy Evolution')
+    ax1.legend()
+    ax1.grid(True, alpha=0.3)
+    
+    # Variance
+    if 'variance' in history:
+        ax2 = fig.add_subplot(gs[1, 0])
+        ax2.plot(steps, history['variance'], 'r-', alpha=0.7)
+        ax2.set_xlabel('Training Step')
+        ax2.set_ylabel('Energy Variance')
+        ax2.set_title('Energy Variance')
+        ax2.set_yscale('log')
+        ax2.grid(True, alpha=0.3)
+    
+    # Acceptance rate
+    if 'acceptance_rate' in history:
+        ax3 = fig.add_subplot(gs[1, 1])
+        ax3.plot(steps, history['acceptance_rate'], 'g-', alpha=0.7)
+        ax3.axhline(y=0.5, color='k', linestyle='--', alpha=0.5, label='Target')
+        ax3.set_xlabel('Training Step')
+        ax3.set_ylabel('Acceptance Rate')
+        ax3.set_title('MCMC Acceptance Rate')
+        ax3.set_ylim([0, 1])
+        ax3.legend()
+        ax3.grid(True, alpha=0.3)
+    
+    # Gradient norm
+    if 'gradient_norm' in history:
+        ax4 = fig.add_subplot(gs[2, 0])
+        ax4.plot(steps, history['gradient_norm'], 'm-', alpha=0.7)
+        ax4.set_xlabel('Training Step')
+        ax4.set_ylabel('Gradient Norm')
+        ax4.set_title('Gradient Magnitude')
+        ax4.set_yscale('log')
+        ax4.grid(True, alpha=0.3)
+    
+    # Condition number (for SR)
+    if 'sr_condition_number' in history:
+        ax5 = fig.add_subplot(gs[2, 1])
+        ax5.plot(steps, history['sr_condition_number'], 'c-', alpha=0.7)
+        ax5.set_xlabel('Training Step')
+        ax5.set_ylabel('Condition Number')
+        ax5.set_title('S-Matrix Condition Number')
+        ax5.set_yscale('log')
+        ax5.grid(True, alpha=0.3)
+    
+    if save_path:
+        plt.savefig(save_path, dpi=300, bbox_inches='tight')
+    
+    if show:
+        plt.show()
+    
+    return fig
+
+
+def plot_autocorrelation(autocorr: np.ndarray,
+                        max_lag: Optional[int] = None,
+                        save_path: Optional[str] = None,
+                        show: bool = True) -> plt.Figure:
+    """Plot autocorrelation function.
+    
+    Args:
+        autocorr: Autocorrelation values
+        max_lag: Maximum lag to plot
+        save_path: Path to save figure
+        show: Whether to display
+        
+    Returns:
+        Matplotlib figure
+    """
+    if max_lag is None:
+        max_lag = len(autocorr)
+    
+    fig, ax = plt.subplots(figsize=(10, 6))
+    
+    lags = np.arange(min(len(autocorr), max_lag))
+    ax.plot(lags, autocorr[:max_lag], 'b-', linewidth=2)
+    ax.axhline(y=0, color='k', linestyle='--', alpha=0.5)
+    ax.axhline(y=np.exp(-1), color='r', linestyle='--', alpha=0.5, label='e⁻¹')
+    
+    ax.set_xlabel('Lag')
+    ax.set_ylabel('Autocorrelation')
+    ax.set_title('Autocorrelation Function')
+    ax.legend()
+    ax.grid(True, alpha=0.3)
+    
+    if save_path:
+        plt.savefig(save_path, dpi=300, bbox_inches='tight')
+    
+    if show:
+        plt.show()
+    
+    return fig
+
+
+def plot_blocking_analysis(block_sizes: np.ndarray,
+                          errors: np.ndarray,
+                          save_path: Optional[str] = None,
+                          show: bool = True) -> plt.Figure:
+    """Plot blocking analysis results.
+    
+    Args:
+        block_sizes: Block sizes
+        errors: Error estimates
+        save_path: Path to save figure
+        show: Whether to display
+        
+    Returns:
+        Matplotlib figure
+    """
+    fig, ax = plt.subplots(figsize=(10, 6))
+    
+    ax.plot(block_sizes, errors, 'bo-', linewidth=2, markersize=8)
+    ax.axhline(y=errors[-1], color='r', linestyle='--', alpha=0.5, 
+              label=f'Plateau: {errors[-1]:.6f}')
+    
+    ax.set_xlabel('Block Size')
+    ax.set_ylabel('Standard Error')
+    ax.set_title('Blocking Analysis')
+    ax.set_xscale('log', base=2)
+    ax.legend()
+    ax.grid(True, alpha=0.3)
+    
+    if save_path:
+        plt.savefig(save_path, dpi=300, bbox_inches='tight')
+    
+    if show:
+        plt.show()
+    
+    return fig
+
+
+def plot_energy_histogram(energies: np.ndarray,
+                         true_energy: Optional[float] = None,
+                         save_path: Optional[str] = None,
+                         show: bool = True) -> plt.Figure:
+    """Plot histogram of local energies.
+    
+    Args:
+        energies: Local energy values
+        true_energy: True ground state energy (if known)
+        save_path: Path to save figure
+        show: Whether to display
+        
+    Returns:
+        Matplotlib figure
+    """
+    fig, ax = plt.subplots(figsize=(10, 6))
+    
+    ax.hist(energies, bins=50, density=True, alpha=0.7, color='b', edgecolor='black')
+    
+    # Add mean line
+    mean_energy = np.mean(energies)
+    ax.axvline(mean_energy, color='r', linestyle='--', linewidth=2,
+              label=f'Mean: {mean_energy:.6f}')
+    
+    # Add true energy if provided
+    if true_energy is not None:
+        ax.axvline(true_energy, color='g', linestyle='--', linewidth=2,
+                  label=f'True: {true_energy:.6f}')
+    
+    ax.set_xlabel('Local Energy')
+    ax.set_ylabel('Probability Density')
+    ax.set_title('Local Energy Distribution')
+    ax.legend()
+    ax.grid(True, alpha=0.3)
+    
+    if save_path:
+        plt.savefig(save_path, dpi=300, bbox_inches='tight')
+    
+    if show:
+        plt.show()
+    
+    return fig
+
+
+def plot_spin_correlation(samples: np.ndarray,
+                         save_path: Optional[str] = None,
+                         show: bool = True) -> plt.Figure:
+    """Plot spin-spin correlation function.
+    
+    C(r) = ⟨σᵢ σᵢ₊ᵣ⟩
+    
+    Args:
+        samples: Spin configurations (num_samples, num_sites)
+        save_path: Path to save figure
+        show: Whether to display
+        
+    Returns:
+        Matplotlib figure
+    """
+    num_samples, num_sites = samples.shape
+    
+    # Compute correlations
+    correlations = np.zeros(num_sites)
+    for r in range(num_sites):
+        corr = 0.0
+        for i in range(num_sites):
+            j = (i + r) % num_sites
+            corr += np.mean(samples[:, i] * samples[:, j])
+        correlations[r] = corr / num_sites
+    
+    fig, ax = plt.subplots(figsize=(10, 6))
+    
+    ax.plot(range(num_sites), correlations, 'bo-', linewidth=2, markersize=8)
+    ax.axhline(y=0, color='k', linestyle='--', alpha=0.5)
+    
+    ax.set_xlabel('Distance r')
+    ax.set_ylabel('Correlation ⟨σᵢσᵢ₊ᵣ⟩')
+    ax.set_title('Spin-Spin Correlation Function')
+    ax.grid(True, alpha=0.3)
+    
+    if save_path:
+        plt.savefig(save_path, dpi=300, bbox_inches='tight')
+    
+    if show:
+        plt.show()
+    
+    return fig
+
+
+def plot_wavefunction_amplitudes(model,
+                                num_sites: int,
+                                save_path: Optional[str] = None,
+                                show: bool = True) -> plt.Figure:
+    """Plot wavefunction amplitudes for all basis states.
+    
+    Only practical for small systems (num_sites <= 10).
+    
+    Args:
+        model: NQS model
+        num_sites: Number of sites
+        save_path: Path to save figure
+        show: Whether to display
+        
+    Returns:
+        Matplotlib figure
+    """
+    if num_sites > 10:
+        print("Warning: Too many states to plot, using num_sites=10")
+        num_sites = 10
+    
+    # Generate all configurations
+    from itertools import product
+    configs = np.array(list(product([-1, 1], repeat=num_sites)))
+    
+    # Get amplitudes
+    log_psi = model(configs, training=False).numpy()
+    amplitudes = np.exp(log_psi)
+    
+    # Normalize
+    amplitudes = amplitudes / np.sqrt(np.sum(amplitudes**2))
+    
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 10))
+    
+    # Bar plot
+    x = np.arange(len(amplitudes))
+    ax1.bar(x, amplitudes, alpha=0.7, edgecolor='black')
+    ax1.set_xlabel('Basis State Index')
+    ax1.set_ylabel('Amplitude |ψ|')
+    ax1.set_title('Wavefunction Amplitudes')
+    ax1.grid(True, alpha=0.3)
+    
+    # Heatmap of configuration patterns
+    ax2.imshow(configs.T, aspect='auto', cmap='RdBu', vmin=-1, vmax=1)
+    ax2.set_xlabel('Basis State Index')
+    ax2.set_ylabel('Site')
+    ax2.set_title('Spin Configurations')
+    
+    plt.tight_layout()
+    
+    if save_path:
+        plt.savefig(save_path, dpi=300, bbox_inches='tight')
+    
+    if show:
+        plt.show()
+    
+    return fig
+
+
+def plot_convergence_comparison(histories: Dict[str, Dict],
+                               save_path: Optional[str] = None,
+                               show: bool = True) -> plt.Figure:
+    """Compare convergence of different methods.
+    
+    Args:
+        histories: Dictionary of {method_name: history_dict}
+        save_path: Path to save figure
+        show: Whether to display
+        
+    Returns:
+        Matplotlib figure
+    """
+    fig, ax = plt.subplots(figsize=(12, 6))
+    
+    for method_name, history in histories.items():
+        steps = np.arange(len(history['energy']))
+        ax.plot(steps, history['energy'], label=method_name, linewidth=2)
+    
+    ax.set_xlabel('Training Step')
+    ax.set_ylabel('Energy')
+    ax.set_title('Method Comparison')
+    ax.legend()
+    ax.grid(True, alpha=0.3)
+    
+    if save_path:
+        plt.savefig(save_path, dpi=300, bbox_inches='tight')
+    
+    if show:
+        plt.show()
+    
+    return fig
+
+
